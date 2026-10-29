@@ -49,6 +49,8 @@ Or use the files directly: [business-plan.pdf](business-plan.pdf) and [business-
 2. Read Section 17 (legal and compliance) and Section 19 (disclaimers) before acting on anything.
 3. Replace the worked example with your own capability, market, and numbers, following Section 18.
 
+The [legal review and remaining questions](docs/LEGAL_REVIEW.md) explain the citation review, corrections, and decisions that still need the owner or qualified counsel. Section 17 links the legal authorities; citations do not certify an operating business as compliant.
+
 ## Usage
 
 Edit [business-plan.md](business-plan.md), then rebuild the HTML:
