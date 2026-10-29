@@ -12,6 +12,8 @@ Copyright (c) 2026 CompleteTech LLC.
 
 **No warranty; limitation of liability.** Provided "as is" without warranties of any kind. To the fullest extent permitted by law, CompleteTech LLC and the author are not liable for any loss or damage arising from use of or reliance on this material.
 
-**Trademarks.** The CompleteTech name, logo, and tagline are not licensed for reuse. Use your own name and branding.
+**Trademarks.** Rights to the CompleteTech name, logo, and tagline are reserved. Use your own branding while retaining required attribution; these reservations do not restrict uses permitted by law. See the [CC BY 4.0 legal code](https://creativecommons.org/licenses/by/4.0/legalcode.en), Sections 2 and 3.
+
+**Legal sources and scope.** Section 17 of the plan includes linked statutes, regulations, agency guidance, and license terms checked on October 29, 2026. Their applicability depends on the facts and jurisdiction. The [repository legal review](docs/LEGAL_REVIEW.md) records the changes and unresolved owner/counsel questions. This review is not a legal opinion or certification of compliance.
 
 The full text is in Section 19 of [business-plan.md](business-plan.md).

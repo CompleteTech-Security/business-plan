@@ -295,7 +295,7 @@ Do not represent a business as vulnerable based only on an inferred software sta
 
 Outreach channels may include email, conventional business calls, referral introductions, professional networks, and local business events.
 
-Commercial communications must comply with applicable email, telemarketing, and privacy rules, including relevant state requirements and opt-out handling.
+Commercial communications must comply with applicable email, telemarketing, and privacy rules, including relevant state requirements and opt-out handling. Before importing contacts or starting a sequence, apply the channel-specific requirements in Section 17.3 and the data-source checks in Section 17.4; a public business listing is not blanket consent to marketing.
 
 **Volume.** Reaching 4 to 8 new clients per month implies contacting roughly 1,600 to 3,200 prospects per month at the assumed 1% meeting rate (Section 11.2). That needs a CRM, sequencing and deliverability tooling, suppression and opt-out lists, and sender domains kept separate from the main business domain. AI may draft messages, but a person approves each template, and messages must not claim a prospect is vulnerable without evidence. If compliance or deliverability limits volume, lower the client target instead of loosening the rules.
 
@@ -867,40 +867,42 @@ Full inventory: [CompleteTech-Security repositories](https://github.com/orgs/Com
 
 # 17. Legal and Compliance
 
-This section lists the issues a business of this kind most often has to address. It is a starting checklist for a conversation with a qualified attorney, not legal advice. It is written from a United States perspective; other countries have different rules. Laws change and differ by state, so verify each item for your own jurisdiction before relying on it.
+This is a United States-oriented checklist, with Ohio examples because the worked example targets Cincinnati. EU and UK references apply only when their territorial and other requirements are met. It is general information for review with qualified counsel, not a legal opinion or a determination that any proposed service is compliant. Sources were checked on October 29, 2026; confirm current law, effective dates, applicable exceptions, and the facts of each engagement before launch. Statutes, regulations, agency guidance, license terms, and recommended business safeguards are identified separately below.
 
 ## 17.1 Authorization to Test
 
-- Testing or probing a computer system you do not own without the owner's permission can violate computer-crime laws, such as the U.S. Computer Fraud and Abuse Act (18 U.S.C. § 1030) and state equivalents (in Ohio, R.C. 2913.04), even when the intent is benign.
-- Obtain written authorization before any active assessment. It should name the assets, the methods, the time window, the data that may be touched, and the person who has authority to approve it.
+- Unauthorized access, access exceeding authorization, and damaging activity can implicate the [Computer Fraud and Abuse Act, 18 U.S.C. § 1030](https://www.law.cornell.edu/uscode/text/18/1030), depending on the statutory elements and facts. Ohio separately prohibits specified access without or beyond consent under [R.C. 2913.04(B)](https://codes.ohio.gov/ohio-revised-code/section-2913.04).
+- As an operating safeguard, obtain written authorization before any active assessment. It should name the assets, methods, time window, data that may be touched, stop conditions, and person with authority to approve it. Written permission is this plan's policy, not a claim that every applicable statute requires a particular written form.
 - Confirm the signer controls the asset. Hosting providers, cloud platforms, and third-party software vendors may impose their own testing rules.
-- Passive observation of what a public site voluntarily sends is a lower-risk activity, but it is not risk-free. Terms of service, `robots.txt`, rate limits, and local law still apply.
+- Public accessibility and `robots.txt` are not grants of testing authorization. Review access restrictions, provider policies, contract terms, and law; do not bypass authentication or technical controls. A terms-of-service breach is not automatically a CFAA offense.
+- The [DOJ's 2022 charging-policy announcement](https://www.justice.gov/archives/opa/pr/department-justice-announces-new-policy-charging-cases-under-computer-fraud-and-abuse-act) describes protection for qualifying good-faith security research. It is prosecutorial guidance, not permission from a system owner or immunity from civil claims or state law. Do not rely on it instead of authorization.
 
 ## 17.2 Vulnerability Information and Disclosure
 
-- Do not tell a business it *is* vulnerable unless you have authorized evidence. An unverified accusation can harm the business and expose you to defamation or unfair-practices claims.
+- Do not tell a business it *is* vulnerable unless you have authorized evidence supporting that specific claim. Describe uncertainty and avoid unsupported claims of compromise or imminent harm; misleading sales claims can implicate the [FTC Act, § 5 (15 U.S.C. § 45)](https://www.ftc.gov/legal-library/browse/statutes/federal-trade-commission-act). Defamation and other liability depend on the facts and applicable state law.
 - If you find a flaw in someone else's product, follow coordinated disclosure practice and the vendor's disclosure policy.
-- Do not publish customer-specific vulnerability details.
-- Check whether distributing security tools is restricted in your jurisdiction (for example, export-control rules).
+- Keep customer findings confidential unless disclosure is authorized or legally required; agree on escalation and disclosure procedures in the engagement.
+- Before international distribution or access, assess export classification, destination, end user, and end use. Some cybersecurity items are controlled; open-source publication is not a universal exemption. See the [Bureau of Industry and Security's decision tools](https://www.bis.gov/learn-support/decision-tools) and [EAR § 740.22, License Exception ACE](https://www.bis.gov/regulations/ear/740). This review does not classify the linked tools.
 
 ## 17.3 Marketing, Outreach and Consumer Protection
 
-- Email: the U.S. CAN-SPAM Act requires accurate headers, a physical address, and a working opt-out. Honor opt-outs promptly.
-- Phone and text: the Telephone Consumer Protection Act, the FTC Telemarketing Sales Rule, and state do-not-call and telemarketing laws restrict calls and texts, including some business-to-business contact.
-- Fear-based or exaggerated claims can be an unfair or deceptive practice (FTC Act § 5 and state laws). Make only claims you can substantiate.
-- Describe what your service does and does not cover. Do not imply a guarantee of security.
-- If you describe results, testimonials, or earnings, they must be truthful and typical or clearly labeled otherwise.
+- **Commercial email:** CAN-SPAM covers business-to-business messages too. Use accurate sender information and subjects, identify advertising as required, include a valid postal address and clear opt-out, keep the opt-out available for at least 30 days, and honor requests within 10 business days. Monitor vendors acting for you. See the [FTC's CAN-SPAM compliance guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business), explaining 15 U.S.C. §§ 7701–7713 and 16 C.F.R. Part 316. Separate sender domains do not remove these duties or permit evading suppression lists.
+- **Calls and texts:** Review the TCPA and [47 C.F.R. § 64.1200](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200) before dialing or texting. Requirements depend on the number, recipient, purpose, technology, and consent. Do not assume a business contact's mobile number is exempt. Review state rules and do-not-call obligations as well.
+- **Business telemarketing:** The TSR has exemptions, but its B2B exemption is not blanket permission for misleading sales calls; see [16 C.F.R. § 310.6(b)(7)](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310/section-310.6) and the [FTC's explanation of its 2024 B2B amendments](https://www.ftc.gov/news-events/news/press-releases/2024/03/ftc-implements-new-protections-businesses-against-telemarketing-fraud-affirms-protections-against-ai).
+- **Claims and endorsements:** Substantiate claims and describe coverage limitations. Under the [FTC's Endorsement Guides guidance](https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking), merely saying “results not typical” or “individual results may vary” does not cure a misleading testimonial. Support the advertised results or clearly disclose the generally expected performance, as applicable, and disclose material connections. The plan's projections are hypothetical assumptions, not customer results.
+- **International outreach:** U.S. compliance does not establish permission elsewhere. For example, UK electronic marketing also engages PECR; treatment differs for corporate subscribers and individuals, including sole traders. See the [ICO's B2B marketing guidance](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/business-to-business-marketing/). Clear each market and channel before contacting prospects.
 
 ## 17.4 Privacy and Data Protection
 
-- Business contact data can still be personal data. Depending on where your contacts are, GDPR, UK GDPR, CCPA/CPRA and other state privacy laws may apply.
-- Keep only what you need, record the source, honor deletion and opt-out requests, and set a retention period.
-- Customer reports and inventories can be sensitive. Protect them, restrict access, and notify affected parties as breach-notification laws require.
-- Sign a data processing agreement where you handle personal data for a customer.
+- Business contact data can be personal data. Determine scope from the business's establishment, activities, people affected, applicable thresholds, and exemptions. EU GDPR does not apply solely because a contact is an EU citizen; see the [EDPB's data-protection basics](https://www.edpb.europa.eu/sme/learn-the-basics/data-protection-basics_en), including territorial scope and lawful processing.
+- Before sourcing contacts, document permitted uses, provenance, lawful basis where required, notices, retention, security, and rights handling. Public availability is not unrestricted permission to reuse data. Collect only what is needed and honor applicable rights, including marketing objections; preserve the minimum suppression data needed to avoid re-contacting people who opted out.
+- Assess CCPA as amended by CPRA and other state laws separately. The [California Attorney General's CCPA guidance](https://oag.ca.gov/privacy/ccpa) explains covered-business criteria and notes that the employment and B2B exemptions expired at the end of 2022. A small business is not automatically covered or automatically exempt.
+- Determine whether each party is a controller, joint controller, processor, or service provider. Where GDPR Article 28 applies, use the required processing agreement; a generic confidentiality clause is insufficient. See the [EDPB's controller/processor guidance](https://www.edpb.europa.eu/sme/learn-the-basics/data-controller-or-data-processor_en). Review subprocessors and cross-border transfers before sending client data to cloud or AI services.
+- Protect reports and inventories, restrict access, and establish an incident-notification procedure. Applicable notification triggers, recipients, and deadlines vary. For Ohio, consult [R.C. 1349.19](https://codes.ohio.gov/ohio-revised-code/section-1349.19), including distinct duties for owners/licensees and custodians; do not apply a single deadline to every incident.
 
 ## 17.5 Contracts and Liability
 
-Have a lawyer draft or review these documents before you take a paying customer:
+As a business safeguard, have a lawyer draft or review these documents before accepting customer work, including free pilots that access systems or data:
 
 - Master services agreement and statement of work.
 - Written testing authorization and rules of engagement.
@@ -909,29 +911,34 @@ Have a lawyer draft or review these documents before you take a paying customer:
 - Confidentiality and data-handling terms.
 - Subcontractor and white-label partner agreements.
 
+For recurring plans, state the term, price, renewal, cancellation, refunds, and any early-termination charge clearly before acceptance. If an online consumer negative-option transaction is covered, [ROSCA, 15 U.S.C. § 8403](https://www.law.cornell.edu/uscode/text/15/8403) requires material-term disclosure, express informed consent, and a simple way to stop recurring charges. Check state automatic-renewal laws and their scope separately; do not assume consumer rules apply identically to every B2B contract.
+
+The public template's disclaimer is not a substitute for an agreed client contract and cannot waive non-waivable duties. Enforceability of liability caps and indemnities requires jurisdiction-specific review.
+
 Consider professional liability (errors and omissions) and cyber insurance. A security consultant who makes a mistake, or whose tool disrupts a customer system, can face a large claim.
 
 ## 17.6 Business Formation, Licensing and Tax
 
 - Form a business entity suited to your risk, keep business and personal finances separate, and register where required.
-- Some jurisdictions license security consultants, investigators, or contractors. Confirm whether your services need a license.
-- Collect and remit sales tax where services are taxable, and keep records for income tax.
+- Confirm required licenses and permits for the actual activities and location; do not assume a generic cybersecurity-consultant license exists everywhere. See the [SBA's business-launch guidance](https://www.sba.gov/counseling/launch-your-business/).
+- Review sales-tax registration, nexus, sourcing, and service classification with a tax professional. Ohio taxes specified business-use data processing, computer, and electronic information services under [Ohio Admin. Code 5703-9-46](https://codes.ohio.gov/ohio-administrative-code/rule-5703-9-46); the treatment of each proposed package must be determined from its actual services and applicable exclusions. Keep income-tax records as well.
 - Register trade names and check that your chosen name does not infringe someone else's trademark.
 
 ## 17.7 Open-Source Licensing
 
-- The AGPL-3.0 requires that if you modify AGPL software and let users interact with it over a network, you offer them the corresponding source code. Read the license before building a hosted service on AGPL code.
-- Keep license and copyright notices intact.
-- If you plan to sell proprietary licenses for software you did not write alone, confirm you hold the necessary rights from every contributor.
+- Under [AGPL-3.0 § 13](https://www.gnu.org/licenses/agpl-3.0.html#section13), a modified version supporting remote network interaction must prominently offer its interacting users access to the Corresponding Source at no charge. Distribution has additional requirements under §§ 4–6. Review the actual integration and each dependency; a hosted deployment does not automatically place every unrelated service under AGPL.
+- Preserve required copyright and license notices. Inventory each repository's actual license, version, exceptions, dependencies, and asset rights before reuse; this plan's references are not a license audit of the linked portfolio.
+- A proprietary alternative requires sufficient rights to all included material. Review contributor and third-party rights; paying for a commercial license does not automatically clear unrelated dependencies.
+- This plan uses [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.en). Section 3 requires attribution, retention of specified notices, and identification of changes when sharing; § 2(a)(5)(B) prohibits additional restrictions on licensed rights. Trademark rights are not granted (§ 2(b)(2)), and endorsement must not be implied (§ 2(a)(6)). Brand-asset exclusions do not remove the ability to credit the original publisher or any use permitted by law.
 
 ## 17.8 Using AI Responsibly in Client Work
 
 - AI output can be wrong, incomplete, or invented. A qualified person should review anything that reaches a customer, especially findings, legal text, and code that touches production.
 - Do not paste customer confidential data or credentials into an AI service unless your agreement with the customer and the provider's terms allow it.
-- Review each AI provider's terms of use, data retention, and acceptable-use policy, and stay within them. Using an AI service to carry out unauthorized access is prohibited by essentially every provider.
-- Disclose AI use where the law or the customer expects it. Several jurisdictions require disclosure when a customer is talking to an automated system.
+- Review each provider's current terms, data use, retention, subprocessors, and acceptable-use rules for the selected product and account. Contract terms differ; this review has not assessed every provider.
+- Determine applicable AI disclosure duties and agree on transparency with the customer. For EU-covered systems, [AI Act Article 50](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50) addresses specified interaction and synthetic-content transparency obligations, with different provider and deployer duties and exceptions; it is not a universal rule requiring every AI-assisted draft to be labeled. Check the current text and implementation guidance for the actual system.
 - Keep a human approval step for consequential actions, and keep an audit log of what an agent did.
-- Check applicable AI regulation for your market, such as the EU AI Act and state laws on automated decision-making.
+- Before deploying AI in hiring, credit, health, or other consequential decisions, obtain a separate sector- and jurisdiction-specific review of automated-decision, discrimination, privacy, and professional-practice requirements. Human review alone does not establish compliance.
 
 # 18. Using and Adapting This Plan
 
@@ -939,10 +946,10 @@ This plan is published as an open template so that anyone can learn from it and 
 
 ## 18.1 What Is Specific to the Worked Example
 
-- The 51-repository security tool portfolio and its AGPL-3.0 licensing.
+- The 51-repository security tool portfolio and the licensing described in those repositories, to be checked individually before reuse.
 - The Cincinnati-first market assumption. Replace it with your own region.
 - Pricing, volume, and revenue figures, which are planning placeholders.
-- The CompleteTech name, logo, and tagline, which belong to its original authors and are not licensed for reuse. Use your own name and branding (see Section 19).
+- The CompleteTech name, logo, and tagline, whose brand rights are reserved. Use your own branding while retaining required attribution (see Section 19).
 
 ## 18.2 What Transfers to Other Businesses
 
@@ -1002,6 +1009,8 @@ To the fullest extent permitted by law, the authors and CompleteTech LLC, the or
 ## 19.7 License
 
 Originally published by CompleteTech LLC. Copyright © 2026 CompleteTech LLC. Except for the items listed below, this document is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You may copy, adapt, and use it, including commercially, if you give appropriate credit, link to the license, and indicate whether you made changes. You must not suggest that CompleteTech LLC endorses you or your use. Please use your own company name and branding when you adapt the plan.
+
+The [CC BY 4.0 legal code](https://creativecommons.org/licenses/by/4.0/legalcode.en) controls the licensed rights and conditions. Preserve required notices and prior modification indications when sharing. Brand exclusions do not prohibit required attribution, imply ownership of ordinary words, or restrict uses permitted by law. The disclaimers here do not add restrictions to CC-licensed rights or waive rights that cannot lawfully be waived.
 
 Not licensed under CC BY 4.0:
 
