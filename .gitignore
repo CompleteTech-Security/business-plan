@@ -1,0 +1,9 @@
+# local scratch, never customer data
+*.tmp
+*.bak
+.env
+customers/
+inventories/
+reports-private/
+__pycache__/
+assets/

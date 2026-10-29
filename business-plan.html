@@ -1,0 +1,1276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'">
+<title>AI-Era Technology Services Business Plan</title>
+<style>
+:root{--accent:#1E3A8A;--sky:#0B7BEA;--gold:#F5B800;--bg:#F4F7FB;--surface:#FFFFFF;--surface-2:#EEF2FF;--ink:#0F172A;--ink-2:#1E293B;--ink-3:#64748B;--line:#E2E8F0;--line-2:#CBD5E1;--link:#1E3A8A;--shadow:0 1px 2px rgba(15,23,42,.06),0 8px 24px rgba(30,58,138,.08)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--accent:#7C9CF0;--sky:#4DA3FF;--gold:#FFC83D;--bg:#0B1220;--surface:#16213A;--surface-2:#1C2A4A;--ink:#F1F5F9;--ink-2:#CBD5E1;--ink-3:#94A3B8;--line:#26334F;--line-2:#3A4A6B;--link:#9DB6F7;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{--accent:#7C9CF0;--sky:#4DA3FF;--gold:#FFC83D;--bg:#0B1220;--surface:#16213A;--surface-2:#1C2A4A;--ink:#F1F5F9;--ink-2:#CBD5E1;--ink-3:#94A3B8;--line:#26334F;--line-2:#3A4A6B;--link:#9DB6F7;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink-2);font:16px/1.6 "Segoe UI",Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-underline-offset:3px}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+
+/* top bar */
+.bar{position:fixed;inset:0 0 auto 0;z-index:20;height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transform:translateY(-100%);transition:transform .25s}
+.bar.on{transform:none}
+.bar b{font-size:.78rem;letter-spacing:.16em;color:var(--accent)}
+.bar i{position:absolute;left:0;bottom:-1px;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--sky))}
+.theme{padding:6px 14px;background:var(--surface);color:var(--ink);border:1px solid var(--line-2);border-radius:999px;font:600 .78rem "Segoe UI",Arial,sans-serif;cursor:pointer}
+.theme.float{position:fixed;top:14px;right:16px;z-index:21;background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.35)}
+.bar.on~.theme.float{display:none}
+
+/* hero */
+.hero{position:relative;overflow:hidden;color:#fff;padding:44px 0 96px;background:radial-gradient(circle at 85% 15%,rgba(11,123,234,.55),transparent 45%),linear-gradient(135deg,#0A1740 0%,#1E3A8A 60%,#0B5BD3 100%)}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1.2px,transparent 1.4px);background-size:26px 26px;mask-image:linear-gradient(120deg,transparent 30%,#000 100%);-webkit-mask-image:linear-gradient(120deg,transparent 30%,#000 100%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:linear-gradient(90deg,var(--gold),#F5B800 18%,#0B7BEA 60%,#38A0FF)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
+.eyebrow{margin:0 0 12px;font-size:.78rem;letter-spacing:.22em;font-weight:700;color:var(--gold)}
+h1.title{margin:0;font-size:clamp(2.1rem,5.4vw,3.4rem);line-height:1.08;letter-spacing:-.01em;color:#fff}
+.subtitle{margin:12px 0 0;font-size:1.15rem;line-height:1.5;color:rgba(255,255,255,.82);max-width:34ch}
+.tag{display:inline-block;margin-top:18px;padding:7px 16px;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-size:.88rem;letter-spacing:.04em;background:rgba(255,255,255,.08)}
+.logo-card{padding:16px;background:#F8FAFC;border-radius:20px;box-shadow:0 20px 50px rgba(2,8,32,.45)}
+.logo-card img{display:block;width:100%;height:auto}
+.hero .wrap.cw{display:block}
+.chips{position:relative;display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.chip{flex:1 1 auto;padding:8px 14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:10px;font-size:.84rem;line-height:1.35}
+.chip span{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.chip a{color:#fff}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin:-54px 0 0;position:relative}
+.stat{padding:14px 10px;text-align:center;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:12px;box-shadow:var(--shadow)}
+.stat:nth-child(even){border-top-color:var(--sky)}
+.stat b{display:block;font-size:1.65rem;line-height:1.1;color:var(--ink);letter-spacing:-.01em}
+.stat span{display:block;margin-top:6px;font-size:.76rem;line-height:1.3;color:var(--ink-3)}
+
+.notice{margin:22px 0 0;padding:14px 20px;background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:0 12px 12px 0;font-size:.88rem;line-height:1.55;color:var(--ink-2)}
+.notice b{color:var(--ink)}
+
+/* contents */
+nav.toc{margin:22px 0 0;padding:18px 24px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+nav.toc h2{margin:0 0 12px;font-size:.78rem;letter-spacing:.18em;color:var(--accent)}
+nav.toc ol{list-style:none;counter-reset:t;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(10,auto);grid-auto-flow:column;column-gap:36px}
+nav.toc li{counter-increment:t;break-inside:avoid;padding:3px 0;font-size:.93rem}
+nav.toc li::before{content:counter(t,decimal-leading-zero);display:inline-block;width:2.1em;font-weight:700;font-size:.78rem;color:var(--sky)}
+nav.toc a{color:var(--ink-2);text-decoration:none}
+nav.toc a:hover{color:var(--accent);text-decoration:underline}
+
+/* headings */
+main h1{display:flex;align-items:center;gap:16px;margin:2.4em 0 .7em;color:var(--ink);font-size:1.75rem;line-height:1.2;letter-spacing:-.01em}
+main h1 .num{flex:none;display:grid;place-items:center;min-width:52px;height:52px;padding:0 6px;border-radius:14px;background:linear-gradient(135deg,#1E3A8A,#0B7BEA);color:#fff;font-size:1.05rem;letter-spacing:.02em;box-shadow:0 6px 16px rgba(30,58,138,.35)}
+main h1::after{content:"";flex:1;height:2px;margin-left:6px;background:linear-gradient(90deg,var(--line-2),transparent)}
+main h2{position:relative;margin:1.6em 0 .45em;padding-left:16px;color:var(--ink);font-size:1.28rem;line-height:1.3}
+main h2::before{content:"";position:absolute;left:0;top:.18em;bottom:.18em;width:5px;border-radius:3px;background:linear-gradient(var(--gold),var(--sky))}
+main h3{margin:1.2em 0 .3em;color:var(--accent);font-size:1.02rem;letter-spacing:.01em}
+p{margin:.65em 0}
+strong{color:var(--ink)}
+code{padding:.12em .42em;background:var(--surface-2);border:1px solid var(--line);border-radius:5px;font:.86em Consolas,"Cascadia Mono",monospace;color:var(--ink)}
+
+/* lists */
+main ul{list-style:none;padding-left:0;margin:.7em 0}
+main ul li{position:relative;padding:1px 0 1px 26px}
+main ul li::before{content:"";position:absolute;left:5px;top:.82em;width:8px;height:8px;border-radius:2px;background:var(--sky);transform:rotate(45deg)}
+main ol:not(.flow){padding-left:0;list-style:none;counter-reset:o;margin:.7em 0}
+main ol:not(.flow)>li{counter-increment:o;position:relative;padding:2px 0 2px 38px}
+main ol:not(.flow)>li::before{content:counter(o);position:absolute;left:0;top:3px;width:26px;height:26px;border-radius:50%;background:var(--surface-2);border:1px solid var(--line-2);color:var(--accent);font-weight:700;font-size:.8rem;line-height:24px;text-align:center}
+
+/* quote + callout */
+blockquote{margin:1.2em 0;padding:16px 24px 16px 28px;background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--sky);border-radius:0 12px 12px 0;box-shadow:var(--shadow);font-style:italic;color:var(--ink-2)}
+blockquote p{margin:0}
+.callout{position:relative;margin:1.3em 0;padding:18px 26px;color:#fff;background:linear-gradient(135deg,#1E3A8A,#0B5BD3);border-radius:14px;box-shadow:0 12px 30px rgba(30,58,138,.3);font-size:1.08rem;line-height:1.55}
+.callout::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:5px;border-radius:0 3px 3px 0;background:var(--gold)}
+.callout strong{color:#fff}
+
+/* tables */
+.tablewrap{overflow-x:auto;margin:1.1em 0;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;font-size:.9rem;line-height:1.5}
+th{background:#1E3A8A;color:#fff;text-align:left;padding:10px 14px;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+td{padding:8px 14px;border-top:1px solid var(--line);vertical-align:top}
+td:first-child{color:var(--ink);font-weight:600}
+tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 70%,transparent)}
+tbody tr:last-child td{border-bottom:0}
+
+/* workflow */
+ol.flow{list-style:none;counter-reset:s;margin:1.1em 0;padding:0}
+ol.flow li{counter-increment:s;position:relative;margin:0 0 0 20px;padding:0 0 14px 50px;border-left:3px solid var(--line-2)}
+ol.flow li:last-child{border-left-color:transparent;padding-bottom:0}
+ol.flow li::before{content:counter(s);position:absolute;left:-21px;top:0;width:39px;height:39px;border-radius:50%;background:linear-gradient(135deg,#1E3A8A,#0B7BEA);color:#fff;font-weight:700;font-size:.92rem;line-height:39px;text-align:center;border:3px solid var(--bg);box-shadow:0 4px 10px rgba(30,58,138,.3)}
+ol.flow strong{display:block;margin-bottom:2px;font-size:1.02rem}
+
+/* stage cards, segments, phases */
+.stage{margin:.9em 0;padding:2px 24px 12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);counter-increment:stage}
+.stages{counter-reset:stage}
+.stage h3{margin-top:1.1em;color:var(--ink);font-size:1.12rem}
+.stage h3::before{content:"0" counter(stage);display:inline-block;margin-right:12px;padding:2px 10px;border-radius:8px;background:var(--surface-2);border:1px solid var(--line-2);color:var(--accent);font-size:.82rem;vertical-align:2px}
+h2.phase{margin-top:1.8em;padding:9px 18px 9px 22px;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+h2.phase::before{top:0;bottom:0;border-radius:12px 0 0 12px;width:7px}
+h2.segment{padding:10px 18px 10px 22px;background:var(--surface-2);border-radius:10px}
+h2.segment::before{top:0;bottom:0;border-radius:10px 0 0 10px}
+
+p.closing{margin:2em 0 .8em;padding:24px 20px;text-align:center;font-size:1.2rem;color:#fff;background:radial-gradient(circle at 80% 0,rgba(11,123,234,.6),transparent 55%),linear-gradient(135deg,#0A1740,#1E3A8A);border-radius:16px;box-shadow:0 14px 34px rgba(10,23,64,.35);border-bottom:5px solid var(--gold)}
+p.closing strong{color:#fff;letter-spacing:.01em}
+main>p>em:only-child{display:block;padding:14px 18px;border-top:1px solid var(--line);font-size:.86rem;color:var(--ink-3)}
+
+footer{margin-top:28px;padding:18px 0 30px;border-top:1px solid var(--line);color:var(--ink-3);font-size:.84rem;text-align:center;letter-spacing:.03em}
+footer b{color:var(--accent)}
+
+@media (max-width:760px){
+main h1{margin-top:2em}
+.hero{padding:32px 0 88px}.hero .wrap{grid-template-columns:1fr 150px;gap:16px}.logo-card{padding:10px;border-radius:14px}.subtitle{font-size:1rem}.chips{margin-top:20px}
+main h1{font-size:1.4rem}main h1 .num{min-width:44px;height:44px}
+}
+@media (max-width:560px){.stats{grid-template-columns:repeat(6,1fr);gap:10px}.stat{grid-column:span 2}.stat:nth-child(n+4){grid-column:span 3}.stat b{font-size:1.3rem}nav.toc{padding:14px 16px}nav.toc ol{column-gap:14px}nav.toc li{font-size:.82rem;padding:2px 0}nav.toc li::before{width:1.8em}.hero .wrap{grid-template-columns:1fr}.logo-card{max-width:200px;order:-1}}
+@page{size:Letter;margin:10mm}
+@media print{
+:root{--accent:#1E3A8A;--sky:#0B7BEA;--bg:#fff;--surface:#fff;--surface-2:#EEF2FF;--ink:#0F172A;--ink-2:#1E293B;--ink-3:#64748B;--line:#E2E8F0;--line-2:#CBD5E1;--link:#1E3A8A;--shadow:none}
+.bar,.theme{display:none!important}
+body{font-size:10.5pt;line-height:1.55;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.hero{padding:16px 0 52px;border-radius:14px;break-after:avoid}h1.title{font-size:2.2rem}.hero .wrap{gap:12px}.subtitle{margin-top:6px;font-size:1rem}.tag{margin-top:8px}.chips{margin-top:12px;gap:6px}.chip{padding:5px 10px;font-size:.78rem}.stats{margin-top:-36px;gap:10px}.stat{padding:8px 6px}.stat b{font-size:1.3rem}.notice{margin-top:12px;padding:8px 14px;font-size:.78rem;line-height:1.4}body{background:#fff}
+nav.toc{break-inside:avoid;margin-top:12px;padding:10px 20px}nav.toc h2{margin-bottom:6px}nav.toc li{padding:0;font-size:.84rem;white-space:nowrap}main{break-before:page}
+main h1{break-after:avoid;margin-top:2.4em}main h2,main h3{break-after:avoid}
+.stage,.callout,blockquote,ol.flow li,h2.phase,tr{break-inside:avoid}thead{display:table-header-group}
+.tablewrap{overflow:visible}
+}
+</style>
+</head>
+<body>
+<div class="bar" id="bar"><b>OPEN BUSINESS PLAN TEMPLATE</b><button class="theme" type="button" aria-label="Toggle light and dark theme">Theme</button><i></i></div>
+<button class="theme float" type="button" aria-label="Toggle light and dark theme">Theme</button>
+<header class="hero">
+<div class="wrap">
+<div>
+<p class="eyebrow">OPEN BUSINESS PLAN TEMPLATE</p>
+<h1 class="title">AI-Era Technology Services<br>Business Plan</h1>
+<p class="subtitle">An open template: security assessment, managed services, and AI business automation</p>
+<span class="tag">Open template. Adapt it, credit it, build your own.</span>
+</div>
+</div>
+<div class="wrap cw"><div class="chips"><div class="chip"><span>Date</span>October 29, 2026</div><div class="chip"><span>Worked example</span><a href="https://github.com/orgs/CompleteTech-Security/repositories">CompleteTech-Security</a> tool portfolio</div><div class="chip"><span>Example market</span>Local B2B, expanding regionally</div><div class="chip"><span>Planning period</span>12 months</div><div class="chip"><span>License</span><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> (brand assets excluded)</div></div></div>
+</header>
+<div class="wrap">
+<div class="stats"><div class="stat"><b>51</b><span>Example tool repositories</span></div><div class="stat"><b>5</b><span>Revenue streams</span></div><div class="stat"><b>12</b><span>Month roadmap</span></div><div class="stat"><b>$57,384</b><span>Illustrative Year 1 revenue</span></div><div class="stat"><b>$6,564</b><span>Illustrative year-end MRR</span></div></div>
+<nav class="toc" aria-label="Contents"><h2>CONTENTS</h2><ol><li><a href="#1-executive-summary">Executive Summary</a></li><li><a href="#2-existing-technology-assets">Existing Technology Assets</a></li><li><a href="#3-market-segmentation">Market Segmentation</a></li><li><a href="#4-customer-acquisition-system">Customer Acquisition System</a></li><li><a href="#5-free-security-assessment-as-a-lead-magnet">Free Security Assessment as a Lead Magnet</a></li><li><a href="#6-revenue-producing-service-packages">Revenue-Producing Service Packages</a></li><li><a href="#7-commercial-software-and-licensing-strategy">Commercial Software and Licensing Strategy</a></li><li><a href="#8-integrated-operating-architecture">Integrated Operating Architecture</a></li><li><a href="#9-technical-and-security-operating-standards">Technical and Security Operating Standards</a></li><li><a href="#10-sales-and-customer-lifecycle">Sales and Customer Lifecycle</a></li><li><a href="#11-financial-model">Financial Model</a></li><li><a href="#12-go-to-market-roadmap">Go-to-Market Roadmap</a></li><li><a href="#13-key-performance-indicators">Key Performance Indicators</a></li><li><a href="#14-risks-and-mitigations">Risks and Mitigations</a></li><li><a href="#15-additional-growth-opportunities">Additional Growth Opportunities</a></li><li><a href="#16-repository-portfolio-appendix">Repository Portfolio Appendix</a></li><li><a href="#17-legal-and-compliance">Legal and Compliance</a></li><li><a href="#18-using-and-adapting-this-plan">Using and Adapting This Plan</a></li><li><a href="#19-notice-disclaimers-and-license">Notice, Disclaimers and License</a></li><li><a href="#20-strategic-conclusion">Strategic Conclusion</a></li></ol></nav>
+<aside class="notice" role="note"><b>Please read:</b> This is general business-planning information, not legal, financial, tax, or security advice. All figures are illustrative assumptions, not forecasts or promises of income, and you may lose money. Only test systems you own or have written permission to test. Verify everything with qualified professionals. See <a href="#19-notice-disclaimers-and-license">Section 19</a> and <a href="#17-legal-and-compliance">Section 17</a>.</aside>
+<main>
+<h1 id="1-executive-summary"><span class="num">01</span><span>Executive Summary</span></h1>
+<div class="callout"><strong>This is an open template.</strong> It is written around a worked example (a security-tool portfolio and a local B2B services business), but every part is meant to be replaced with your own capability, market, and numbers. "The Company" means your business.</div>
+
+<p>The Company, meaning you or your business, will develop a scalable B2B technology services business using a portfolio of capabilities, in this plan's reference example a set of cybersecurity assessment tools, to acquire customers, solve immediate security problems, establish recurring service relationships, and expand into AI-powered business automation.</p>
+<p>The business begins with a recognizable and time-sensitive problem: businesses operate technology that may be affected by newly disclosed vulnerabilities but often lack the resources to evaluate their exposure promptly.</p>
+<p>The reference example is a portfolio of 51 publicly discoverable GitHub repositories (the CompleteTech-Security organization), comprising 49 specialized security or evidence-assessment tools and two supporting infrastructure utilities.</p>
+<p>These tools form the foundation of a differentiated commercial offering.</p>
+<p>The company's growth strategy comprises five revenue streams:</p>
+<ol>
+<li><strong>Security Assessments:</strong> Targeted, authorized vulnerability and configuration assessments.</li>
+<li><strong>Security Remediation:</strong> Fixed-scope or project-based services addressing confirmed exposures.</li>
+<li><strong>Managed Hosting and Security:</strong> Recurring website management, patch monitoring, maintenance, and security subscriptions.</li>
+<li><strong>AI and Business Automation:</strong> Implementation and maintenance of workflow automation, integrations, AI assistants, and agentic systems.</li>
+<li><strong>Security Software Licensing:</strong> Future commercial licensing, white-label reporting, and integration of the Company's own security tooling.</li>
+</ol>
+<p>The central proposition is straightforward:</p>
+<div class="callout"><strong>Identify a potential security problem, obtain permission to evaluate it, deliver a practical solution, earn the customer's trust, and become their ongoing technology partner.</strong></div>
+
+<p>The company will emphasize measurable results rather than fear-based security sales.</p>
+<h1 id="2-existing-technology-assets"><span class="num">02</span><span>Existing Technology Assets</span></h1>
+<h2 id="21-github-portfolio-overview">2.1 GitHub Portfolio Overview</h2>
+<p>The reference portfolio, the CompleteTech-Security organization, contains 51 repositories grouped into the following categories. Replace this section with an honest inventory of your own tools, skills, or open-source building blocks.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Portfolio</th>
+<th style="text-align: right;">Repositories</th>
+<th>Business application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Node.js CVE checkers</td>
+<td style="text-align: right;">20</td>
+<td>Runtime security reviews, application maintenance</td>
+</tr>
+<tr>
+<td>NetScaler CVE checkers</td>
+<td style="text-align: right;">10</td>
+<td>Enterprise networking and remote-access security</td>
+</tr>
+<tr>
+<td>SonicWall SMA1000 checkers</td>
+<td style="text-align: right;">4</td>
+<td>Remote-access appliance assessments</td>
+</tr>
+<tr>
+<td>Other specialized vulnerability and evidence tools</td>
+<td style="text-align: right;">15</td>
+<td>Web applications, dependencies, infrastructure and platform security</td>
+</tr>
+<tr>
+<td>Supporting inventory and reporting utilities</td>
+<td style="text-align: right;">2</td>
+<td>Evidence collection and reporting integration</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>51</strong></td>
+<td><strong>Security services product foundation</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>This portfolio is a source of reusable technical capabilities, documented assessment methodologies, customer reporting assets, and potential commercial intellectual property.</p>
+<p>It is not yet a verified, unified, production-ready vulnerability management platform.</p>
+<h2 id="22-website-oriented-assessment-tools">2.2 Website-Oriented Assessment Tools</h2>
+<h3 id="php2shell-check">PHP2Shell Check</h3>
+<p><strong>Repository:</strong> <a href="https://github.com/CompleteTech-Security/php2shell-check">php2shell-check</a></p>
+<p>Evaluates PHP versions advertised through ordinary website responses against documented vulnerability-specific fixed versions.</p>
+<p>Documented capabilities include:</p>
+<ul>
+<li>Passive examination of public HTTP response headers.</li>
+<li><code>robots.txt</code> handling.</li>
+<li>TLS verification, request pacing, redirect restrictions, and bounded requests.</li>
+<li>Batch processing of authorized website lists.</li>
+<li>CSV, JSON, and branded standalone HTML reports.</li>
+<li>Durable checkpoints and recovery.</li>
+<li>Agent skill instructions.</li>
+<li>An existing WordPress free-scan integration.</li>
+</ul>
+<p><strong>Commercial use:</strong> Initial technology reviews, website security consultations, customer-facing lead magnets, and authorized website assessments.</p>
+<p><strong>Limitation:</strong> Public headers do not establish actual deployed versions or exploitability.</p>
+<h3 id="node2shell-check">Node2Shell Check</h3>
+<p><strong>Repository:</strong> <a href="https://github.com/CompleteTech-Security/node2shell-check">node2shell-check</a></p>
+<p>Provides vulnerability-specific Node.js version assessment using operator-supplied versions, runtime inventories, or passive website metadata.</p>
+<p><strong>Commercial use:</strong> JavaScript website maintenance, Node.js application assessments, application hosting reviews, and remediation proposals.</p>
+<p>Unlike a general-purpose vulnerability scanner, it does not exploit the reported issue or prove the affected code path is reachable.</p>
+<h3 id="http2shell-check">HTTP2Shell Check</h3>
+<p><strong>Repository:</strong> <a href="https://github.com/CompleteTech-Security/http2shell-check">http2shell-check</a></p>
+<p>Expands component-level assessment for the Brotli vulnerability covered by CVE-2026-111497. Documented supported families include native Brotli, Node.js, Bun, Python Brotli packages, Brotli4j, Envoy, Istio, and certain Debian package evidence.</p>
+<p>It operates offline from supplied inventory information.</p>
+<p><strong>Commercial use:</strong> Deeper infrastructure and software supply-chain assessments following customer authorization.</p>
+<p>Node2Shell and HTTP2Shell cover the same underlying CVE and must not be counted as independent vulnerabilities in customer reporting.</p>
+<h2 id="23-application-and-dependency-security">2.3 Application and Dependency Security</h2>
+<p>The portfolio includes tools for assessing application frameworks, dependencies, container components, and related software.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Repository</th>
+<th>Technology area</th>
+<th>Commercial application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/CompleteTech-Security/nextjs-use-cache-rce-check">nextjs-use-cache-rce-check</a></td>
+<td>Next.js</td>
+<td>Web application dependency review</td>
+</tr>
+<tr>
+<td><a href="https://github.com/CompleteTech-Security/flowise-cve-2026-69254-check">flowise-cve-2026-69254-check</a></td>
+<td>Flowise</td>
+<td>AI platform security assessments</td>
+</tr>
+<tr>
+<td><a href="https://github.com/CompleteTech-Security/simple-git-rce-check">simple-git-rce-check</a></td>
+<td>JavaScript package</td>
+<td>Development environment and dependency reviews</td>
+</tr>
+<tr>
+<td><a href="https://github.com/CompleteTech-Security/vm2-nesting-check">vm2-nesting-check</a></td>
+<td>JavaScript sandbox</td>
+<td>Application sandbox review</td>
+</tr>
+<tr>
+<td><a href="https://github.com/CompleteTech-Security/tinypool-options-rce-check">tinypool-options-rce-check</a></td>
+<td>Worker-pool package</td>
+<td>Software dependency assessment</td>
+</tr>
+<tr>
+<td><a href="https://github.com/CompleteTech-Security/sharp-vectorfreed-check">sharp-vectorfreed-check</a></td>
+<td>Sharp / librsvg</td>
+<td>Image-processing dependency assessment</td>
+</tr>
+<tr>
+<td><a href="https://github.com/CompleteTech-Security/copyescape-check">copyescape-check</a></td>
+<td>Docker / go-archive</td>
+<td>Container infrastructure review</td>
+</tr>
+<tr>
+<td><a href="https://github.com/CompleteTech-Security/docker-hub-ghostpat-check">docker-hub-ghostpat-check</a></td>
+<td>Docker Hub tokens</td>
+<td>Vendor-notification and remediation evidence review</td>
+</tr>
+</tbody>
+</table></div>
+<p>These tools are particularly relevant for businesses running custom software, development pipelines, and AI-enabled applications.</p>
+<p>Most reviewed tools in this category operate exclusively on provided local evidence. They cannot determine a company's vulnerability status simply from its public website.</p>
+<h2 id="24-enterprise-infrastructure-security">2.4 Enterprise Infrastructure Security</h2>
+<p>A portfolio like this expands the business beyond website hosting.</p>
+<h3 id="network-and-remote-access-infrastructure">Network and Remote-Access Infrastructure</h3>
+<ul>
+<li>Ten NetScaler-specific CVE repositories.</li>
+<li>Four SonicWall SMA1000 CVE repositories.</li>
+<li><a href="https://github.com/CompleteTech-Security/ivanti-connect-secure-cve-2026-104935-check">ivanti-connect-secure-cve-2026-104935-check</a>.</li>
+<li><a href="https://github.com/CompleteTech-Security/beyondtrust-remote-support-cve-2026-102764-check">beyondtrust-remote-support-cve-2026-102764-check</a>.</li>
+<li><a href="https://github.com/CompleteTech-Security/fortimail-cve-2026-104286-check">fortimail-cve-2026-104286-check</a>.</li>
+</ul>
+<h3 id="enterprise-applications">Enterprise Applications</h3>
+<ul>
+<li><a href="https://github.com/CompleteTech-Security/atlassian-cve-2026-21589-check">atlassian-cve-2026-21589-check</a>.</li>
+</ul>
+<p>These repositories enable a second customer acquisition strategy targeting mid-sized organizations, IT departments, managed service providers, and companies operating specialized infrastructure.</p>
+<p>This opportunity is distinct from website hosting.</p>
+<p>A business with vulnerable NetScaler or SonicWall infrastructure may need a firmware remediation engagement and ongoing security oversight, not a website migration.</p>
+<p>The Company should therefore maintain separate managed-hosting and managed-security offerings.</p>
+<h2 id="25-supporting-infrastructure">2.5 Supporting Infrastructure</h2>
+<h3 id="oci-runtime-inventory">OCI Runtime Inventory</h3>
+<p><strong>Repository:</strong> <a href="https://github.com/CompleteTech-Security/oci-runtime-inventory">oci-runtime-inventory</a></p>
+<p>Provides offline package metadata extraction from authorized OCI image layouts, Docker-save archives, and supported CycloneDX or SPDX software bills of materials.</p>
+<p>Its documented output adapters support Node2Shell, Sharp, and Flowise assessment workflows.</p>
+<p>This creates an opportunity to combine multiple narrowly focused CVE tools with reusable inventory evidence.</p>
+<p>The inventory tool does not itself issue vulnerability or safety verdicts.</p>
+<h3 id="scan-results-bridge">Scan Results Bridge</h3>
+<p><strong>Repository:</strong> <a href="https://github.com/CompleteTech-Security/scan-results-bridge">scan-results-bridge</a></p>
+<p>Transforms supported checker JSON reports into SARIF 2.1.0 or NDJSON.</p>
+<p>Key capabilities include:</p>
+<ul>
+<li>Offline processing.</li>
+<li>Privacy-preserving identifiers.</li>
+<li>Evidence provenance.</li>
+<li>Standardized finding and unknown-result handling.</li>
+<li>Schema validation.</li>
+<li>CI-friendly failure policies.</li>
+</ul>
+<p><strong>Commercial significance:</strong> A foundation for consolidated customer reports and eventual integrations with security dashboards, development platforms, and managed service operations.</p>
+<p><strong>Current limitation:</strong> The bridge supports a canonical schema and a defined set of legacy adapters. Universal support across all 49 specialized tools, direct CRM integration, SIEM transport, and a hosted security dashboard must not be assumed.</p>
+<h1 id="3-market-segmentation"><span class="num">03</span><span>Market Segmentation</span></h1>
+<p>The portfolio supports three commercial customer segments.</p>
+<h2 class="segment" id="segment-a-local-small-businesses">Segment A: Local Small Businesses</h2>
+<p><strong>Typical customer:</strong> Restaurant, contractor, retail operation, local professional services company, or small e-commerce business.</p>
+<p><strong>Primary need:</strong> Affordable website maintenance, protection, dependable hosting, and access to technical help.</p>
+<p><strong>Acquisition method:</strong> Local business discovery, relevant public technology observations, referrals, and introductory security consultations.</p>
+<p><strong>Primary offers:</strong></p>
+<ul>
+<li>Website security review.</li>
+<li>Website remediation.</li>
+<li>Managed hosting.</li>
+<li>Website maintenance and monitoring.</li>
+<li>Business automation.</li>
+</ul>
+<p><strong>Preferred commercial outcome:</strong> A 12-month managed-service relationship with expansion into AI automation.</p>
+<h2 class="segment" id="segment-b-technology-dependent-smbs">Segment B: Technology-Dependent SMBs</h2>
+<p><strong>Typical customer:</strong> Software company, digital agency, growing e-commerce business, or organization operating custom applications.</p>
+<p><strong>Primary need:</strong> Dependency risk assessments, runtime management, container security, development pipeline assurance, and reliable application operations.</p>
+<p><strong>Primary offers:</strong></p>
+<ul>
+<li>Application security assessment.</li>
+<li>Dependency and runtime inventory.</li>
+<li>Container image review.</li>
+<li>Security remediation.</li>
+<li>Managed application support.</li>
+<li>AI platform hardening and maintenance.</li>
+</ul>
+<p><strong>Preferred commercial outcome:</strong> An ongoing application security and maintenance subscription.</p>
+<h2 class="segment" id="segment-c-mid-market-and-msp-partners">Segment C: Mid-Market and MSP Partners</h2>
+<p><strong>Typical customer:</strong> Regional enterprise, IT services provider, infrastructure operator, or managed service provider.</p>
+<p><strong>Primary need:</strong> Vendor advisory tracking, version and patch evidence assessment, remediation planning, and structured reporting.</p>
+<p><strong>Primary offers:</strong></p>
+<ul>
+<li>Targeted infrastructure vulnerability assessments.</li>
+<li>Vendor-specific risk reviews.</li>
+<li>Patch validation support.</li>
+<li>Security reporting.</li>
+<li>Continuous advisory monitoring.</li>
+<li>White-label assessment services.</li>
+</ul>
+<p><strong>Preferred commercial outcome:</strong> A managed security agreement or recurring channel partnership.</p>
+<h1 id="4-customer-acquisition-system"><span class="num">04</span><span>Customer Acquisition System</span></h1>
+<h2 id="41-discovery">4.1 Discovery</h2>
+<p>Identify local businesses with operational websites using appropriate public business sources.</p>
+<p>Collect business names, domains, locations, business contact channels, industry classifications, and available company descriptions.</p>
+<p>Store results in a central CRM with source and collection-date information.</p>
+<p>No inference of vulnerability is made merely because a company appears in a directory.</p>
+<h2 id="42-advisory-intelligence">4.2 Advisory Intelligence</h2>
+<p>Monitor newly disclosed vulnerabilities and maintain a structured advisory database.</p>
+<p>Each advisory record should include:</p>
+<ul>
+<li>CVE or advisory identifier.</li>
+<li>Affected technologies.</li>
+<li>Documented version ranges.</li>
+<li>Fix information and advisory date.</li>
+<li>Exploitation or priority context when supported by authoritative sources.</li>
+<li>Relevant checker or tool.</li>
+<li>Assessment prerequisites.</li>
+<li>Rule snapshot freshness.</li>
+<li>Required authorization level.</li>
+</ul>
+<p>Multiple checkers describing the same vulnerability should map to the same advisory record.</p>
+<p>This prevents duplicate risk counting and duplicate customer notifications.</p>
+<h2 id="43-preliminary-public-technology-review">4.3 Preliminary Public Technology Review</h2>
+<p>Where lawful and permitted, use minimal, non-intrusive public observations to identify technologies that may be relevant to an advisory.</p>
+<p>Examples include ordinary HTTP headers that voluntarily disclose runtime information.</p>
+<p>The website-oriented capabilities already documented in PHP2Shell Check and Node2Shell Check can support this phase, subject to their authorization restrictions.</p>
+<p>Publicly observable information may justify offering a customer a review. It does not automatically confirm a vulnerability.</p>
+<p>For technologies that require internal version or configuration evidence, skip external testing and request an authorized customer assessment.</p>
+<h2 id="44-contact-enrichment-and-crm">4.4 Contact Enrichment and CRM</h2>
+<p>Enrich relevant business records with publicly listed business contacts, verified professional information, and commercial data providers.</p>
+<p>Maintain:</p>
+<ul>
+<li>Contact identity and business role.</li>
+<li>Business phone and email.</li>
+<li>Information source.</li>
+<li>Last verification date.</li>
+<li>Communication preferences and opt-outs.</li>
+<li>Related technology observations.</li>
+<li>Outreach history.</li>
+<li>Qualification score.</li>
+</ul>
+<p>Avoid collecting personal information unrelated to legitimate business development.</p>
+<h2 id="45-outreach">4.5 Outreach</h2>
+<p>Use personalized business outreach rather than indiscriminate high-volume security alerts.</p>
+<p>A typical initial offer:</p>
+<blockquote>
+<p>[Company] helps local businesses assess recently disclosed software vulnerabilities and maintain their websites and applications. We offer an introductory technology review to determine whether the issue is relevant to your environment and what steps, if any, are needed.</p>
+</blockquote>
+<p>Do not represent a business as vulnerable based only on an inferred software stack or unverified version.</p>
+<p>Outreach channels may include email, conventional business calls, referral introductions, professional networks, and local business events.</p>
+<p>Commercial communications must comply with applicable email, telemarketing, and privacy rules, including relevant state requirements and opt-out handling.</p>
+<h1 id="5-free-security-assessment-as-a-lead-magnet"><span class="num">05</span><span>Free Security Assessment as a Lead Magnet</span></h1>
+<h2 id="51-existing-wordpress-integration">5.1 Existing WordPress Integration</h2>
+<p>The PHP2Shell repository already contains an implementation design under:</p>
+<p><a href="https://github.com/CompleteTech-Security/php2shell-check/blob/main/docs/WORDPRESS.md">php2shell-check/docs/WORDPRESS.md</a></p>
+<p>The documented workflow includes:</p>
+<ol>
+<li>A signed, saved assessment request.</li>
+<li>Recorded scope and terms acceptance.</li>
+<li>Confirmation email.</li>
+<li>Explicit confirmation action.</li>
+<li>Private job queue.</li>
+<li>Worker authorization and restricted assessment.</li>
+<li>Private report and manual review.</li>
+<li>Delivery to the requesting contact.</li>
+</ol>
+<p>This is a useful foundation for a customer-facing free assessment program.</p>
+<p>It is not, by itself, evidence that the hosted integration is ready for public deployment.</p>
+<h2 id="52-required-launch-conditions">5.2 Required Launch Conditions</h2>
+<p>Before enabling the WordPress assessment service, the Company must satisfy the documented safeguards, including enforced network egress restrictions, an explicit served-terms policy configuration, worker and scope validation, request limits, and reviewed report delivery.</p>
+<p>Email confirmation alone does not independently establish control of the target domain. Target authorization and authority-review procedures must remain explicit.</p>
+<p>The documented deployment Compose file does not itself enforce the required network egress boundary.</p>
+<h2 id="53-conversion-strategy">5.3 Conversion Strategy</h2>
+<p>After an authorized assessment, offer the customer an understandable report with evidence, uncertainty, priority, and recommended next steps.</p>
+<p>Provide three possible outcomes:</p>
+<p><strong>No actionable evidence found:</strong> Explain coverage limitations and optionally offer ongoing monitoring.</p>
+<p><strong>Potential exposure identified:</strong> Recommend verification of deployed versions and configuration by the customer or through a separately authorized engagement.</p>
+<p><strong>Confirmed remediation requirement:</strong> Present a fixed-scope remediation proposal and relevant ongoing service options.</p>
+<p>No customer should be pressured to purchase a service to obtain their findings.</p>
+<h1 id="6-revenue-producing-service-packages"><span class="num">06</span><span>Revenue-Producing Service Packages</span></h1>
+<h2 id="61-security-assessment-services">6.1 Security Assessment Services</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Offering</th>
+<th style="text-align: right;">Illustrative price</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Introductory website consultation</td>
+<td style="text-align: right;">Free</td>
+<td>Limited preliminary review and education</td>
+</tr>
+<tr>
+<td>Targeted website assessment</td>
+<td style="text-align: right;">$149–$499</td>
+<td>Authorized single-site assessment</td>
+</tr>
+<tr>
+<td>Application security evidence review</td>
+<td style="text-align: right;">$500–$2,000</td>
+<td>Selected dependency, version and configuration evidence</td>
+</tr>
+<tr>
+<td>Infrastructure advisory review</td>
+<td style="text-align: right;">$750–$3,000</td>
+<td>Scoped appliance or application inventory</td>
+</tr>
+<tr>
+<td>Multi-asset assessment</td>
+<td style="text-align: right;">Custom</td>
+<td>Multiple authorized environments and consolidated reporting</td>
+</tr>
+</tbody>
+</table></div>
+<p>Prices are initial market-test assumptions, not established market benchmarks.</p>
+<p>Assessments must specify what the selected tools can and cannot determine. They do not replace full penetration testing, compromise investigations, or comprehensive vulnerability management.</p>
+<h2 id="62-security-remediation">6.2 Security Remediation</h2>
+<p>Offer one-time remediation for customers who prefer not to subscribe.</p>
+<p><strong>Standard examples:</strong></p>
+<ul>
+<li>Application patching.</li>
+<li>CMS and dependency upgrades.</li>
+<li>Supported firmware coordination.</li>
+<li>Security configuration improvements.</li>
+<li>Hosting environment corrections.</li>
+<li>Backup implementation.</li>
+<li>Post-change verification.</li>
+</ul>
+<p><strong>Indicative pricing:</strong></p>
+<ul>
+<li>Simple repair: $500–$1,500.</li>
+<li>Moderate application remediation: $1,500–$5,000.</li>
+<li>Complex enterprise remediation: custom statement of work.</li>
+</ul>
+<p>The final fee depends on scope, operational risk, customer requirements, and required testing.</p>
+<h2 id="63-managed-website-services">6.3 Managed Website Services</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Service</th>
+<th style="text-align: right;">Essential</th>
+<th style="text-align: right;">Business</th>
+<th style="text-align: right;">Premium</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monthly subscription</td>
+<td style="text-align: right;">$99</td>
+<td style="text-align: right;">$199</td>
+<td style="text-align: right;">$399</td>
+</tr>
+<tr>
+<td>Website hosting or administration</td>
+<td style="text-align: right;">Included by scope</td>
+<td style="text-align: right;">Included by scope</td>
+<td style="text-align: right;">Included by scope</td>
+</tr>
+<tr>
+<td>Scheduled maintenance</td>
+<td style="text-align: right;">Included</td>
+<td style="text-align: right;">Included</td>
+<td style="text-align: right;">Included</td>
+</tr>
+<tr>
+<td>Backup monitoring</td>
+<td style="text-align: right;">Basic</td>
+<td style="text-align: right;">Expanded</td>
+<td style="text-align: right;">Expanded</td>
+</tr>
+<tr>
+<td>Vulnerability advisory review</td>
+<td style="text-align: right;">Basic</td>
+<td style="text-align: right;">Enhanced</td>
+<td style="text-align: right;">Enhanced</td>
+</tr>
+<tr>
+<td>Monthly service report</td>
+<td style="text-align: right;">Basic</td>
+<td style="text-align: right;">Detailed</td>
+<td style="text-align: right;">Detailed</td>
+</tr>
+<tr>
+<td>Support priority</td>
+<td style="text-align: right;">Standard</td>
+<td style="text-align: right;">Priority</td>
+<td style="text-align: right;">Priority</td>
+</tr>
+<tr>
+<td>Technology consultation</td>
+<td style="text-align: right;">Optional</td>
+<td style="text-align: right;">Limited</td>
+<td style="text-align: right;">Included hours</td>
+</tr>
+</tbody>
+</table></div>
+<p>Customers may remain on suitable third-party hosting where the Company can provide management without migration.</p>
+<p>Existing agreements must clearly define storage, bandwidth, licenses, labor limits, recovery obligations, and response times.</p>
+<h2 id="64-managed-application-and-infrastructure-security">6.4 Managed Application and Infrastructure Security</h2>
+<p>Introduce a separate offering for customers with Node.js services, custom applications, containers, networking appliances, or enterprise platforms.</p>
+<p>Services may include:</p>
+<ul>
+<li>Periodic customer-authorized inventory review.</li>
+<li>Mapping known components to relevant advisories.</li>
+<li>Vendor-specific patch assessment.</li>
+<li>Remediation coordination.</li>
+<li>Evidence-based patch follow-up.</li>
+<li>Risk register maintenance.</li>
+<li>Monthly reporting.</li>
+<li>Security consultation.</li>
+</ul>
+<p><strong>Indicative starting subscription:</strong> $299–$1,299 per month, depending on assets, review frequency, and included labor.</p>
+<p>This service does not guarantee that all vulnerabilities will be discovered or that infrastructure is continuously protected.</p>
+<h2 id="65-ai-automation-and-integration-services">6.5 AI Automation and Integration Services</h2>
+<p>Expand established relationships by identifying operational bottlenecks.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI customer communications</td>
+<td>Inquiry triage with human escalation</td>
+</tr>
+<tr>
+<td>CRM automation</td>
+<td>Lead assignment, updates, follow-up</td>
+</tr>
+<tr>
+<td>Scheduling systems</td>
+<td>Booking and notification workflows</td>
+</tr>
+<tr>
+<td>Business analytics</td>
+<td>Revenue, operations, and customer dashboards</td>
+</tr>
+<tr>
+<td>Document automation</td>
+<td>Data extraction, classification and routing</td>
+</tr>
+<tr>
+<td>Application integration</td>
+<td>Connecting existing business platforms</td>
+</tr>
+<tr>
+<td>Custom AI agents</td>
+<td>Controlled, auditable business task execution</td>
+</tr>
+</tbody>
+</table></div>
+<p>Revenue consists of separately scoped implementation fees plus ongoing hosting, monitoring, support, and maintenance subscriptions.</p>
+<p>Solutions should be selected using estimated customer ROI, implementation complexity, and operational risk.</p>
+<h1 id="7-commercial-software-and-licensing-strategy"><span class="num">07</span><span>Commercial Software and Licensing Strategy</span></h1>
+<p>The repositories reviewed commonly describe an AGPL-3.0 open-source license and an option for a separately negotiated commercial license.</p>
+<p>This creates potential additional revenue beyond direct consulting.</p>
+<p>Future products may include:</p>
+<ul>
+<li>Commercially licensed versions of selected assessment tools.</li>
+<li>White-label security assessment reporting.</li>
+<li>Managed service provider licensing.</li>
+<li>Enterprise integration packages.</li>
+<li>Hosted security intelligence subscriptions.</li>
+<li>Bundled vulnerability assessment agent skills.</li>
+</ul>
+<p>Licensing opportunities are subject to actual code ownership, third-party obligations, contributor agreements, trademark rights, and negotiated commercial terms.</p>
+<p>The AGPL allows commercial use under its conditions; a paid license is not automatically required for every commercial activity.</p>
+<p>The Company should preserve appropriate source-code notices and distinguish software licensing from rights to its protected brand assets.</p>
+<h1 id="8-integrated-operating-architecture"><span class="num">08</span><span>Integrated Operating Architecture</span></h1>
+<p>The proposed business platform will connect existing GitHub capabilities to new commercial systems.</p>
+<h2 id="81-workflow">8.1 Workflow</h2>
+<ol class="flow">
+<li><strong>Vulnerability Advisory Intake</strong>Relevant advisories are reviewed and mapped to affected products and supported assessment tools.</li>
+<li><strong>Business and Asset Identification</strong>Business records and available technology information are correlated with relevant advisories.</li>
+<li><strong>Opportunity Qualification</strong>Human-reviewed evidence determines whether a consultation would be useful.</li>
+<li><strong>Customer Outreach</strong>Professional contact is made without overstating exposure.</li>
+<li><strong>Authorization and Assessment</strong>The customer approves scope, targets, methods, and evidence handling.</li>
+<li><strong>Checker Execution</strong>Approved tools run against authorized inventories, local project copies, or explicitly permitted network targets.</li>
+<li><strong>Evidence Normalization</strong>Where supported, security checker JSON passes through Scan Results Bridge into standard report formats.</li>
+<li><strong>Customer Report and Remediation</strong>The Company reviews findings, explains uncertainty, delivers recommendations, and performs approved fixes.</li>
+<li><strong>Managed Service Onboarding</strong>The customer selects appropriate hosting, security, or maintenance services.</li>
+<li><strong>Technology Expansion</strong>Periodic business reviews identify AI automation and integration opportunities.</li>
+</ol>
+
+<h2 id="82-existing-versus-required-technology">8.2 Existing Versus Required Technology</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Existing foundation</th>
+<th>Additional work</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vulnerability-specific assessment</td>
+<td>49 security/evidence repositories</td>
+<td>Tool validation and consistent execution policies</td>
+</tr>
+<tr>
+<td>Public website assessment</td>
+<td>PHP2Shell and Node2Shell modes</td>
+<td>Authorized workflow integration and review</td>
+</tr>
+<tr>
+<td>Free-scan lead capture</td>
+<td>PHP2Shell WordPress integration</td>
+<td>Production safeguards and deployment</td>
+</tr>
+<tr>
+<td>Package/container inventory</td>
+<td>OCI Runtime Inventory</td>
+<td>Broader integration and customer workflows</td>
+</tr>
+<tr>
+<td>Findings normalization</td>
+<td>Scan Results Bridge</td>
+<td>Remaining schema adapters</td>
+</tr>
+<tr>
+<td>Branded reports</td>
+<td>Many checker HTML exports</td>
+<td>Customer-level consolidated reporting</td>
+</tr>
+<tr>
+<td>Advisory monitoring</td>
+<td>Dated rules embedded in tools</td>
+<td>Feed ingestion, update governance and freshness alerts</td>
+</tr>
+<tr>
+<td>Business discovery</td>
+<td>Not established by portfolio</td>
+<td>Directory collection and qualification</td>
+</tr>
+<tr>
+<td>CRM and outreach</td>
+<td>Not established by portfolio</td>
+<td>CRM, compliance, enrichment and communications</td>
+</tr>
+<tr>
+<td>Hosting operations</td>
+<td>Not established by portfolio</td>
+<td>Managed hosting infrastructure and support</td>
+</tr>
+<tr>
+<td>Customer portal</td>
+<td>Not established by portfolio</td>
+<td>Account access, reports, authorizations and billing</td>
+</tr>
+</tbody>
+</table></div>
+<p>The commercial platform should orchestrate the specialized tools rather than merge them into one unmaintainable scanner.</p>
+<p>Each checker should remain independently testable and maintain its specific advisory scope.</p>
+<h1 id="9-technical-and-security-operating-standards"><span class="num">09</span><span>Technical and Security Operating Standards</span></h1>
+<h2 id="91-evidence-classification">9.1 Evidence Classification</h2>
+<p>Preserve the existing checker distinction between:</p>
+<ul>
+<li><code>potentially_affected</code></li>
+<li><code>fixed_version_reported</code></li>
+<li><code>unknown</code></li>
+</ul>
+<p>Retain the separate field <code>exploitability: not_tested</code> whenever emitted by the source tool.</p>
+<p>A fixed version reported in evidence is not independent deployed patch verification.</p>
+<p>An unknown version must not be presented as safe.</p>
+<p>No report should claim actual compromise or confirmed exploitability unless independent authorized investigation supports that conclusion.</p>
+<h2 id="92-data-provenance">9.2 Data Provenance</h2>
+<p>Every report should preserve, where available:</p>
+<ul>
+<li>Customer and authorized asset identifiers.</li>
+<li>Checker name and version.</li>
+<li>Applicable CVE or advisory.</li>
+<li>Rule snapshot date.</li>
+<li>Evidence source and observation time.</li>
+<li>Result status and confidence.</li>
+<li>Report completeness.</li>
+<li>Technical reviewer.</li>
+<li>Remediation and follow-up status.</li>
+</ul>
+<p>Track source-tool results separately from human-confirmed findings.</p>
+<h2 id="93-privacy-and-security-controls">9.3 Privacy and Security Controls</h2>
+<ul>
+<li>Keep customer inventories and reports out of public Git repositories.</li>
+<li>Store sensitive customer data in access-controlled systems.</li>
+<li>Use separate customer data boundaries.</li>
+<li>Limit credentials and authorization scopes.</li>
+<li>Protect reports and backups.</li>
+<li>Preserve audit trails.</li>
+<li>Verify recovery procedures.</li>
+<li>Use explicit customer permission for active assessments and production changes.</li>
+<li>Review report contents before disclosure.</li>
+<li>Establish retention and deletion policies.</li>
+</ul>
+<h2 id="94-tool-quality">9.4 Tool Quality</h2>
+<p>Before commercial deployment, validate:</p>
+<ul>
+<li>Advisory and fixed-version accuracy.</li>
+<li>Test coverage.</li>
+<li>Dependency and runtime requirements.</li>
+<li>Complete/incomplete report semantics.</li>
+<li>Error handling.</li>
+<li>Output interoperability.</li>
+<li>CI reliability.</li>
+<li>Privacy controls.</li>
+<li>Reproducibility.</li>
+<li>Correct documentation and repository links.</li>
+</ul>
+<p>Existing repository documentation demonstrates design intent and implemented interfaces, not automatically proven production readiness.</p>
+<h1 id="10-sales-and-customer-lifecycle"><span class="num">10</span><span>Sales and Customer Lifecycle</span></h1>
+<p>The customer lifecycle has five stages.</p>
+<div class="stages"><div class="stage"><h3 id="stage-1-security-awareness">Stage 1 — Security Awareness</h3>
+<p>The business learns of a relevant security concern or requests a review.</p>
+<p><strong>Goal:</strong> Establish a credible reason for engagement.</p>
+</div><div class="stage"><h3 id="stage-2-technical-resolution">Stage 2 — Technical Resolution</h3>
+<p>The Company completes an authorized assessment and, where appropriate, repairs the problem.</p>
+<p><strong>Goal:</strong> Demonstrate competence and deliver a measurable outcome.</p>
+</div><div class="stage"><h3 id="stage-3-service-continuity">Stage 3 — Service Continuity</h3>
+<p>The customer subscribes to managed hosting, application maintenance, or security oversight.</p>
+<p><strong>Goal:</strong> Reduce recurring technology risk and create predictable service revenue.</p>
+</div><div class="stage"><h3 id="stage-4-business-optimization">Stage 4 — Business Optimization</h3>
+<p>The Company evaluates manual workflows, customer acquisition, software integrations, and operating costs.</p>
+<p><strong>Goal:</strong> Identify business improvements beyond security.</p>
+</div><div class="stage"><h3 id="stage-5-strategic-technology-partnership">Stage 5 — Strategic Technology Partnership</h3>
+<p>Successful automation projects generate further opportunities through scheduled reviews, referrals, and long-term planning.</p>
+<p><strong>Goal:</strong> Increase customer retention and lifetime value through measurable outcomes.</p>
+</div></div><h1 id="11-financial-model"><span class="num">11</span><span>Financial Model</span></h1>
+<h2 id="111-first-year-assumptions">11.1 First-Year Assumptions</h2>
+<p>The base financial scenario retains the original plan's conservative illustration:</p>
+<ul>
+<li>30 managed-service customers by year-end.</li>
+<li>$179 blended managed-service monthly subscription.</li>
+<li>15 average active managed-service customers during Year 1.</li>
+<li>12 separately billed remediation projects at $750 each.</li>
+<li>Six automation implementation projects at $1,500 each.</li>
+<li>Six automation subscribers at year-end.</li>
+<li>Three average active automation subscribers at $199 per month.</li>
+</ul>
+<p>These are planning assumptions, not demand forecasts.</p>
+<h2 id="112-year-1-revenue">11.2 Year 1 Revenue</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Revenue stream</th>
+<th style="text-align: right;">Annual revenue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Managed hosting and security subscriptions</td>
+<td style="text-align: right;">$32,220</td>
+</tr>
+<tr>
+<td>Standalone remediation projects</td>
+<td style="text-align: right;">$9,000</td>
+</tr>
+<tr>
+<td>Automation implementations</td>
+<td style="text-align: right;">$9,000</td>
+</tr>
+<tr>
+<td>Recurring automation subscriptions</td>
+<td style="text-align: right;">$7,164</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>$57,384</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>This base scenario excludes potential additional revenue from enterprise assessments, managed infrastructure security, MSP partnerships, and commercial software licensing.</p>
+<p>These are upside opportunities that should only enter the financial model once validated.</p>
+<h2 id="113-recurring-revenue-at-year-end">11.3 Recurring Revenue at Year-End</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Metric</th>
+<th style="text-align: right;">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Managed services MRR</td>
+<td style="text-align: right;">$5,370</td>
+</tr>
+<tr>
+<td>Automation services MRR</td>
+<td style="text-align: right;">$1,194</td>
+</tr>
+<tr>
+<td><strong>Combined MRR</strong></td>
+<td style="text-align: right;"><strong>$6,564</strong></td>
+</tr>
+<tr>
+<td><strong>Annualized recurring revenue run rate</strong></td>
+<td style="text-align: right;"><strong>$78,768</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="114-financial-controls">11.4 Financial Controls</h2>
+<p>Maintain separate financial reporting for:</p>
+<ul>
+<li>One-time projects.</li>
+<li>Recurring managed services.</li>
+<li>Automation subscriptions.</li>
+<li>Enterprise security contracts.</li>
+<li>Software licensing.</li>
+</ul>
+<p>Measure gross margin after hosting, software, support labor, monitoring infrastructure, payment fees, and directly attributable service costs.</p>
+<p>Track acquisition costs, customer churn, utilization, contract renewal rates, and liabilities arising from service commitments.</p>
+<p>A customer paying less than their previous hosting bill is only a viable win if the Company can sustainably deliver the agreed services.</p>
+<h1 id="12-go-to-market-roadmap"><span class="num">12</span><span>Go-to-Market Roadmap</span></h1>
+<h2 class="phase" id="phase-1-days-130-package-and-validate">Phase 1: Days 1–30 — Package and Validate</h2>
+<ul>
+<li>Complete a technical inventory of the 51 repositories.</li>
+<li>Identify commercially supportable tools and unresolved implementation limitations.</li>
+<li>Validate advisory rule freshness and vendor evidence.</li>
+<li>Test the applicable JSON, CSV, HTML, SARIF and NDJSON workflows.</li>
+<li>Identify gaps in Scan Results Bridge compatibility.</li>
+<li>Review repository naming and links for accuracy.</li>
+<li>Define customer assessment authorization.</li>
+<li>Establish service pricing, scope, and customer agreements.</li>
+<li>Configure CRM, reporting, and customer records.</li>
+<li>Prepare sample reports using synthetic data.</li>
+</ul>
+<p><strong>Success gate:</strong> Repeatable, authorized assessment delivery with accurate reporting and documented limitations.</p>
+<h2 class="phase" id="phase-2-days-3160-pilot">Phase 2: Days 31–60 — Pilot</h2>
+<ul>
+<li>Select a small group of willing businesses.</li>
+<li>Conduct authorized pilot assessments.</li>
+<li>Test customer-facing reports.</li>
+<li>Validate conversion from consultation to remediation.</li>
+<li>Measure service costs and turnaround times.</li>
+<li>Test managed-service onboarding.</li>
+<li>Refine packages based on customer needs.</li>
+</ul>
+<p>The existing WordPress free-scan integration may be piloted only after its documented safety and operational requirements are met.</p>
+<p><strong>Success gate:</strong> Evidence that customers value the service and that it can be delivered profitably.</p>
+<h2 class="phase" id="phase-3-days-6190-commercial-launch">Phase 3: Days 61–90 — Commercial Launch</h2>
+<ul>
+<li>Establish a structured local prospecting process.</li>
+<li>Introduce documented outreach sequences.</li>
+<li>Publish service descriptions and example reports.</li>
+<li>Add customer referral mechanisms.</li>
+<li>Formalize recurring maintenance packages.</li>
+<li>Develop partnerships with agencies and IT providers.</li>
+<li>Begin targeted enterprise advisory reviews.</li>
+<li>Offer initial AI automation discovery consultations.</li>
+</ul>
+<p><strong>Success gate:</strong> Repeatable sales, onboarding, remediation, and retention procedures.</p>
+<h2 class="phase" id="phase-4-months-46-standardization">Phase 4: Months 4–6 — Standardization</h2>
+<ul>
+<li>Expand customer inventory and reporting integrations.</li>
+<li>Implement additional schema adapters.</li>
+<li>Automate appropriate administrative tasks.</li>
+<li>Develop a common customer reporting experience.</li>
+<li>Establish regular advisory-rule maintenance.</li>
+<li>Improve service monitoring and incident workflows.</li>
+<li>Launch recurring technology reviews.</li>
+</ul>
+<h2 class="phase" id="phase-5-months-712-expansion">Phase 5: Months 7–12 — Expansion</h2>
+<ul>
+<li>Enter adjacent regional markets.</li>
+<li>Expand MSP and agency partnerships.</li>
+<li>Introduce managed infrastructure security packages.</li>
+<li>Pilot commercially licensed or white-label reporting.</li>
+<li>Productize successful AI automation solutions.</li>
+<li>Improve account expansion and customer retention.</li>
+<li>Reinvest in repeatable technology delivery.</li>
+</ul>
+<h1 id="13-key-performance-indicators"><span class="num">13</span><span>Key Performance Indicators</span></h1>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Primary KPI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Market discovery</td>
+<td>Qualified businesses identified</td>
+</tr>
+<tr>
+<td>Prospecting</td>
+<td>Response and meeting conversion rates</td>
+</tr>
+<tr>
+<td>Security assessment</td>
+<td>Completed authorized assessments</td>
+</tr>
+<tr>
+<td>Technical quality</td>
+<td>False-positive rate, unknown-result rate, evidence completeness</td>
+</tr>
+<tr>
+<td>Remediation</td>
+<td>Proposal win rate and resolution verification</td>
+</tr>
+<tr>
+<td>Managed services</td>
+<td>MRR, gross margin, churn</td>
+</tr>
+<tr>
+<td>Customer expansion</td>
+<td>Automation attach rate and additional revenue per account</td>
+</tr>
+<tr>
+<td>Customer experience</td>
+<td>Retention and satisfaction</td>
+</tr>
+<tr>
+<td>Software portfolio</td>
+<td>Tool coverage, tests, advisory freshness, integration compatibility</td>
+</tr>
+<tr>
+<td>Profitability</td>
+<td>Customer acquisition cost and lifetime gross profit</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="suggested-90-day-validation-targets">Suggested 90-Day Validation Targets</h2>
+<p>Initial test targets, subject to adjustment:</p>
+<ul>
+<li>100–250 qualified business records.</li>
+<li>20–40 meaningful sales conversations.</li>
+<li>10–20 consented consultations or assessments.</li>
+<li>Three to eight initial paying customers.</li>
+<li>At least one recurring managed-service conversion.</li>
+<li>At least one business automation discovery engagement.</li>
+</ul>
+<p>These are experimental operating targets, not projected conversion outcomes.</p>
+<h1 id="14-risks-and-mitigations"><span class="num">14</span><span>Risks and Mitigations</span></h1>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unverified vulnerability claims</td>
+<td>Require source evidence, appropriate confidence labels, and human review</td>
+</tr>
+<tr>
+<td>Unauthorized security assessment</td>
+<td>Written scope and enforceable authorization controls</td>
+</tr>
+<tr>
+<td>Public scanning service misuse</td>
+<td>Egress controls, rate limits, strict target validation and manual review</td>
+</tr>
+<tr>
+<td>Outdated advisory rules</td>
+<td>Dated snapshots, maintenance ownership and vendor cross-checking</td>
+</tr>
+<tr>
+<td>Incompatible assessment outputs</td>
+<td>Versioned schemas and tested normalization adapters</td>
+</tr>
+<tr>
+<td>Sensitive customer-data disclosure</td>
+<td>Segregated storage, access controls and redaction</td>
+</tr>
+<tr>
+<td>Underpriced recurring services</td>
+<td>Cost accounting and service-scope limits</td>
+</tr>
+<tr>
+<td>Security tools mistaken for complete protection</td>
+<td>Explicit coverage statements and appropriate third-party tools</td>
+</tr>
+<tr>
+<td>Commercial licensing uncertainty</td>
+<td>Intellectual-property and license review</td>
+</tr>
+<tr>
+<td>AI service failures</td>
+<td>Testing, audit logs, bounded permissions and human approval for consequential actions</td>
+</tr>
+</tbody>
+</table></div>
+<p>Trust is the foundation of this sales strategy. It must be preserved through accurate findings, careful data handling, reliable service, and transparent commercial practices.</p>
+<h1 id="15-additional-growth-opportunities"><span class="num">15</span><span>Additional Growth Opportunities</span></h1>
+<h2 id="151-security-assessment-marketplace">15.1 Security Assessment Marketplace</h2>
+<p>Build a searchable interface where each supported vulnerability has:</p>
+<ul>
+<li>An advisory explanation.</li>
+<li>Affected technologies.</li>
+<li>Assessment prerequisites.</li>
+<li>Checker documentation.</li>
+<li>Supported inputs and outputs.</li>
+<li>Remediation guidance.</li>
+<li>Available professional services.</li>
+</ul>
+<p>This provides both technical education and a route to qualified commercial inquiries.</p>
+<h2 id="152-msp-white-label-program">15.2 MSP White-Label Program</h2>
+<p>Allow approved MSP partners to use supported reports under commercial arrangements.</p>
+<p>Partners can provide customer inventories, receive standardized reports, and purchase implementation assistance.</p>
+<p>This could expand distribution without requiring the Company to establish a direct sales relationship with every end customer.</p>
+<h2 id="153-ai-assisted-security-operations">15.3 AI-Assisted Security Operations</h2>
+<p>Use agents to assist with:</p>
+<ul>
+<li>Advisory summarization.</li>
+<li>Asset-to-advisory matching.</li>
+<li>Report drafting.</li>
+<li>Technical review preparation.</li>
+<li>Customer ticket creation.</li>
+<li>Remediation planning.</li>
+<li>Change documentation.</li>
+<li>Service reporting.</li>
+</ul>
+<p>Agents should not independently test third-party systems, assert exploitability, or modify production environments without appropriate authorization and controls.</p>
+<h2 id="154-recurring-security-intelligence-subscription">15.4 Recurring Security Intelligence Subscription</h2>
+<p>Offer a subscription focused on periodic advisory reviews and customer-supplied asset inventories.</p>
+<p>A subscriber receives actionable notifications when known technologies are relevant to newly reviewed advisories.</p>
+<p>The product should clearly state its coverage limitations, assessment frequency, and evidence requirements.</p>
+<h2 id="155-open-source-to-commercial-funnel">15.5 Open-Source-to-Commercial Funnel</h2>
+<p>The public GitHub portfolio can serve as a credibility and discovery channel.</p>
+<p>A technically capable customer may discover the Company through a checker, use it successfully, and later purchase consulting, managed services, or integrations.</p>
+<p>The open-source portfolio therefore supports both marketing and product development.</p>
+<h1 id="16-repository-portfolio-appendix"><span class="num">16</span><span>Repository Portfolio Appendix</span></h1>
+<p><strong>20 Node.js-specific repositories</strong></p>
+<p>CVE-2026-56846, 56847, 56848, 56850; 58039–58045; 105481–105483; and 106069–106074.</p>
+<p><strong>10 NetScaler-specific repositories</strong></p>
+<p>CVE-2026-88771–88778 and CVE-2026-19489–19490.</p>
+<p><strong>4 SonicWall SMA1000 repositories</strong></p>
+<p>CVE-2026-102255–102258.</p>
+<p><strong>15 specialized security/evidence repositories</strong></p>
+<p>php2shell-check, http2shell-check, node2shell-check, vm2-nesting-check, flowise-cve-2026-69254-check, ivanti-connect-secure-cve-2026-104935-check, docker-hub-ghostpat-check, fortimail-cve-2026-104286-check, copyescape-check, simple-git-rce-check, tinypool-options-rce-check, atlassian-cve-2026-21589-check, sharp-vectorfreed-check, beyondtrust-remote-support-cve-2026-102764-check, and nextjs-use-cache-rce-check.</p>
+<p><strong>2 supporting utilities</strong></p>
+<p>oci-runtime-inventory and scan-results-bridge.</p>
+<p>Full inventory: <a href="https://github.com/orgs/CompleteTech-Security/repositories">CompleteTech-Security repositories</a>.</p>
+<h1 id="17-legal-and-compliance"><span class="num">17</span><span>Legal and Compliance</span></h1>
+<p>This section lists the issues a business of this kind most often has to address. It is a starting checklist for a conversation with a qualified attorney, not legal advice. It is written from a United States perspective; other countries have different rules. Laws change and differ by state, so verify each item for your own jurisdiction before relying on it.</p>
+<h2 id="171-authorization-to-test">17.1 Authorization to Test</h2>
+<ul>
+<li>Testing or probing a computer system you do not own without the owner's permission can violate computer-crime laws, such as the U.S. Computer Fraud and Abuse Act (18 U.S.C. § 1030) and state equivalents (in Ohio, R.C. 2913.04), even when the intent is benign.</li>
+<li>Obtain written authorization before any active assessment. It should name the assets, the methods, the time window, the data that may be touched, and the person who has authority to approve it.</li>
+<li>Confirm the signer controls the asset. Hosting providers, cloud platforms, and third-party software vendors may impose their own testing rules.</li>
+<li>Passive observation of what a public site voluntarily sends is a lower-risk activity, but it is not risk-free. Terms of service, <code>robots.txt</code>, rate limits, and local law still apply.</li>
+</ul>
+<h2 id="172-vulnerability-information-and-disclosure">17.2 Vulnerability Information and Disclosure</h2>
+<ul>
+<li>Do not tell a business it <em>is</em> vulnerable unless you have authorized evidence. An unverified accusation can harm the business and expose you to defamation or unfair-practices claims.</li>
+<li>If you find a flaw in someone else's product, follow coordinated disclosure practice and the vendor's disclosure policy.</li>
+<li>Do not publish customer-specific vulnerability details.</li>
+<li>Check whether distributing security tools is restricted in your jurisdiction (for example, export-control rules).</li>
+</ul>
+<h2 id="173-marketing-outreach-and-consumer-protection">17.3 Marketing, Outreach and Consumer Protection</h2>
+<ul>
+<li>Email: the U.S. CAN-SPAM Act requires accurate headers, a physical address, and a working opt-out. Honor opt-outs promptly.</li>
+<li>Phone and text: the Telephone Consumer Protection Act, the FTC Telemarketing Sales Rule, and state do-not-call and telemarketing laws restrict calls and texts, including some business-to-business contact.</li>
+<li>Fear-based or exaggerated claims can be an unfair or deceptive practice (FTC Act § 5 and state laws). Make only claims you can substantiate.</li>
+<li>Describe what your service does and does not cover. Do not imply a guarantee of security.</li>
+<li>If you describe results, testimonials, or earnings, they must be truthful and typical or clearly labeled otherwise.</li>
+</ul>
+<h2 id="174-privacy-and-data-protection">17.4 Privacy and Data Protection</h2>
+<ul>
+<li>Business contact data can still be personal data. Depending on where your contacts are, GDPR, UK GDPR, CCPA/CPRA and other state privacy laws may apply.</li>
+<li>Keep only what you need, record the source, honor deletion and opt-out requests, and set a retention period.</li>
+<li>Customer reports and inventories can be sensitive. Protect them, restrict access, and notify affected parties as breach-notification laws require.</li>
+<li>Sign a data processing agreement where you handle personal data for a customer.</li>
+</ul>
+<h2 id="175-contracts-and-liability">17.5 Contracts and Liability</h2>
+<p>Have a lawyer draft or review these documents before you take a paying customer:</p>
+<ul>
+<li>Master services agreement and statement of work.</li>
+<li>Written testing authorization and rules of engagement.</li>
+<li>Limitation of liability, warranty disclaimer, and indemnity terms that fit your jurisdiction.</li>
+<li>Service-level terms that match what you can actually deliver.</li>
+<li>Confidentiality and data-handling terms.</li>
+<li>Subcontractor and white-label partner agreements.</li>
+</ul>
+<p>Consider professional liability (errors and omissions) and cyber insurance. A security consultant who makes a mistake, or whose tool disrupts a customer system, can face a large claim.</p>
+<h2 id="176-business-formation-licensing-and-tax">17.6 Business Formation, Licensing and Tax</h2>
+<ul>
+<li>Form a business entity suited to your risk, keep business and personal finances separate, and register where required.</li>
+<li>Some jurisdictions license security consultants, investigators, or contractors. Confirm whether your services need a license.</li>
+<li>Collect and remit sales tax where services are taxable, and keep records for income tax.</li>
+<li>Register trade names and check that your chosen name does not infringe someone else's trademark.</li>
+</ul>
+<h2 id="177-open-source-licensing">17.7 Open-Source Licensing</h2>
+<ul>
+<li>The AGPL-3.0 requires that if you modify AGPL software and let users interact with it over a network, you offer them the corresponding source code. Read the license before building a hosted service on AGPL code.</li>
+<li>Keep license and copyright notices intact.</li>
+<li>If you plan to sell proprietary licenses for software you did not write alone, confirm you hold the necessary rights from every contributor.</li>
+</ul>
+<h2 id="178-using-ai-responsibly-in-client-work">17.8 Using AI Responsibly in Client Work</h2>
+<ul>
+<li>AI output can be wrong, incomplete, or invented. A qualified person should review anything that reaches a customer, especially findings, legal text, and code that touches production.</li>
+<li>Do not paste customer confidential data or credentials into an AI service unless your agreement with the customer and the provider's terms allow it.</li>
+<li>Review each AI provider's terms of use, data retention, and acceptable-use policy, and stay within them. Using an AI service to carry out unauthorized access is prohibited by essentially every provider.</li>
+<li>Disclose AI use where the law or the customer expects it. Several jurisdictions require disclosure when a customer is talking to an automated system.</li>
+<li>Keep a human approval step for consequential actions, and keep an audit log of what an agent did.</li>
+<li>Check applicable AI regulation for your market, such as the EU AI Act and state laws on automated decision-making.</li>
+</ul>
+<h1 id="18-using-and-adapting-this-plan"><span class="num">18</span><span>Using and Adapting This Plan</span></h1>
+<p>This plan is published as an open template so that anyone can learn from it and build their own business. It is not specific to any one company: read "the Company" as your own business. The security-tool portfolio, locations, and figures are a worked example, not requirements.</p>
+<h2 id="181-what-is-specific-to-the-worked-example">18.1 What Is Specific to the Worked Example</h2>
+<ul>
+<li>The 51-repository security tool portfolio and its AGPL-3.0 licensing.</li>
+<li>The Cincinnati-first market assumption. Replace it with your own region.</li>
+<li>Pricing, volume, and revenue figures, which are planning placeholders.</li>
+<li>The CompleteTech name, logo, and tagline, which belong to its original authors and are not licensed for reuse. Use your own name and branding (see Section 19).</li>
+</ul>
+<h2 id="182-what-transfers-to-other-businesses">18.2 What Transfers to Other Businesses</h2>
+<ul>
+<li>The customer ladder: a narrow, well-defined problem leads to a trusted engagement, then to recurring service, then to broader work.</li>
+<li>The evidence-first reporting rule: separate what a tool observed from what a human confirmed, and never present "unknown" as "safe".</li>
+<li>The authorization-first operating model.</li>
+<li>Recurring-revenue packaging with explicit scope limits.</li>
+<li>Tracking acquisition cost, margin, churn, and renewal from day one.</li>
+</ul>
+<h2 id="183-ways-to-adapt-it-with-ai">18.3 Ways to Adapt It with AI</h2>
+<p>You do not need security tools to use the same shape of business. Replace the security checker with whatever narrow, repeatable capability you can deliver reliably:</p>
+<ul>
+<li>Review and report on a specific problem for local businesses, such as website accessibility, broken forms, or outdated plugins, using your own or open-source tooling.</li>
+<li>AI-assisted bookkeeping clean-up, document processing, scheduling, or customer-inquiry triage, with human review.</li>
+<li>Workflow automation and integration for businesses that run on spreadsheets and email.</li>
+<li>Content, reporting, and analytics services built on AI drafting with human editing.</li>
+<li>White-label work for agencies and IT providers who need capacity.</li>
+</ul>
+<p>Whatever you choose, apply the same rules: be honest about what the service can and cannot do, get written permission before touching a customer's systems or data, keep a person responsible for the output, and price from your real costs.</p>
+<h2 id="184-a-practical-starting-sequence">18.4 A Practical Starting Sequence</h2>
+<ol>
+<li>Pick one narrow service you can deliver well and explain in a sentence.</li>
+<li>Write the scope, exclusions, and authorization in plain language and have a lawyer review them.</li>
+<li>Run two or three free or discounted pilots with willing, consenting customers.</li>
+<li>Record time, cost, and outcome for each pilot, then set a price that covers them.</li>
+<li>Add recurring service only after the one-time service works.</li>
+<li>Add automation and AI where it measurably saves time, never as a way to skip review.</li>
+</ol>
+<h1 id="19-notice-disclaimers-and-license"><span class="num">19</span><span>Notice, Disclaimers and License</span></h1>
+<h2 id="191-not-professional-advice">19.1 Not Professional Advice</h2>
+<p>This document is general business-planning information published for education and discussion. It is not legal, tax, accounting, financial, investment, insurance, cybersecurity, or other professional advice, and it creates no attorney-client, consultant-client, fiduciary, or other professional relationship. Consult qualified professionals about your own circumstances before acting.</p>
+<h2 id="192-no-earnings-or-results-guarantee">19.2 No Earnings or Results Guarantee</h2>
+<p>All prices, volumes, conversion rates, revenue figures, margins, and timelines are illustrative assumptions for one hypothetical scenario. They are not forecasts, benchmarks, or typical results. Many new businesses earn little or nothing, and you can lose money. Nothing here promises or implies that you will earn any particular income, or any income at all. Your results depend on your skills, effort, market, costs, legal compliance, and many factors no one controls.</p>
+<h2 id="193-security-tools-and-testing">19.3 Security Tools and Testing</h2>
+<p>Security assessment tools can produce false positives and false negatives, depend on dated advisory data, and do not establish exploitability or the absence of vulnerabilities. They are not a substitute for professional penetration testing, incident response, or a complete security program. Run any scanning or assessment tool only against systems you own or have explicit written permission to test. You are solely responsible for how you use any tool, and for compliance with the laws that apply to you.</p>
+<h2 id="194-accuracy-currency-and-third-party-material">19.4 Accuracy, Currency and Third-Party Material</h2>
+<p>Information about the repositories, tools, and vulnerabilities described here was drawn from the cited public documentation as of October 29, 2026 and may be incomplete, outdated, or wrong. Vulnerability identifiers, affected versions, and fixes must be verified against the vendor's current official advisories. Legal and regulatory summaries are general and non-exhaustive. Links lead to third-party content that CompleteTech does not control. Product and company names are the property of their respective owners and are used only to identify them. This document is not affiliated with, sponsored by, or endorsed by any vendor named in it.</p>
+<h2 id="195-forward-looking-statements">19.5 Forward-Looking Statements</h2>
+<p>Statements about future products, services, partnerships, licensing, and capabilities describe intentions and ideas. They are not commitments, and they may change or never happen.</p>
+<h2 id="196-limitation-of-liability">19.6 Limitation of Liability</h2>
+<p>To the fullest extent permitted by law, the authors and CompleteTech LLC, the original publisher, provide this document "as is" and "as available", without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, accuracy, and non-infringement. To the fullest extent permitted by law, neither the authors nor CompleteTech LLC is liable for any direct, indirect, incidental, special, consequential, or other loss or damage, including lost profits, business interruption, data loss, legal penalties, or third-party claims, arising from the use of or reliance on this document. Some jurisdictions do not allow certain limits, so some of these limits may not apply to you.</p>
+<h2 id="197-license">19.7 License</h2>
+<p>Originally published by CompleteTech LLC. Copyright © 2026 CompleteTech LLC. Except for the items listed below, this document is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>. You may copy, adapt, and use it, including commercially, if you give appropriate credit, link to the license, and indicate whether you made changes. You must not suggest that CompleteTech LLC endorses you or your use. Please use your own company name and branding when you adapt the plan.</p>
+<p>Not licensed under CC BY 4.0:</p>
+<ul>
+<li>The CompleteTech name, logo, tagline, and other brand assets. All rights reserved.</li>
+<li>The software in the referenced repositories, which is governed by each repository's own license (many are AGPL-3.0), not by this document's license.</li>
+</ul>
+<p>Contributions or corrections to the published plan are welcome under the same license.</p>
+<p><em>Business planning document. Pricing, customer acquisition targets, revenue projections, and future product capabilities are illustrative until validated. Repository capabilities are based on the reviewed GitHub documentation as of October 29, 2026. Not legal, financial, or security advice; see Section 19.</em></p>
+<h1 id="20-strategic-conclusion"><span class="num">20</span><span>Strategic Conclusion</span></h1>
+<p>The reference example starts with a substantial portfolio of narrowly focused security assessment and evidence-processing tools. Your starting asset may be different, and the same logic applies.</p>
+<p>This changes the company's potential positioning.</p>
+<p>Rather than presenting itself solely as a website hosting provider or general technology consultant, the Company can establish a differentiated practice around evidence-driven vulnerability assessment, practical remediation, managed technology services, and AI-enabled business improvement.</p>
+<p>The commercial strategy must recognize that public website information is often insufficient to establish vulnerability exposure. This makes customer authorization, credible reporting, and ongoing advisory expertise central to the offering.</p>
+<p>The most valuable long-term customer relationship will often begin with a narrow technical problem and develop into a broader service agreement.</p>
+<p><strong>The operating model is:</strong></p>
+<div class="callout"><strong>Security Intelligence → Customer Consultation → Authorized Assessment → Remediation → Managed Services → Business Automation → Long-Term Technology Partnership.</strong></div>
+
+<p>The tool portfolio is the technical foundation. The commercial opportunity comes from packaging those capabilities into reliable, understandable services that provide customers with continuing value.</p>
+<p class="closing"><strong>Your company here. Build something trustworthy.</strong></p>
+</main>
+<footer><b>Open Business Plan Template</b> · Originally published by CompleteTech LLC · © 2026 · Text licensed CC BY 4.0 · Not professional advice</footer>
+</div>
+<script>
+(function(){
+var r=document.documentElement,b=document.querySelectorAll('.theme'),bar=document.getElementById('bar'),p=bar.querySelector('i');
+try{var s=localStorage.getItem('plan-theme');if(s)r.setAttribute('data-theme',s)}catch(e){}
+b.forEach(function(x){x.addEventListener('click',function(){
+var dark=r.getAttribute('data-theme')?r.getAttribute('data-theme')==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+var n=dark?'light':'dark';r.setAttribute('data-theme',n);
+try{localStorage.setItem('plan-theme',n)}catch(e){}
+})});
+function f(){var h=document.documentElement,t=h.scrollHeight-h.clientHeight;
+bar.classList.toggle('on',h.scrollTop>320);p.style.width=(t>0?h.scrollTop/t*100:0)+'%'}
+addEventListener('scroll',f,{passive:true});f();
+})();
+</script>
+</body>
+</html>
