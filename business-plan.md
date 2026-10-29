@@ -347,12 +347,12 @@ No customer should be pressured to purchase a service to obtain their findings.
 | Offering | Illustrative price | Scope |
 |---|---:|---|
 | Introductory website consultation | Free | Limited preliminary review and education |
-| Targeted website assessment | $149–$499 | Authorized single-site assessment |
-| Application security evidence review | $500–$2,000 | Selected dependency, version and configuration evidence |
-| Infrastructure advisory review | $750–$3,000 | Scoped appliance or application inventory |
+| Targeted website assessment | $79–$249 | Authorized single-site assessment |
+| Application security evidence review | $249–$999 | Selected dependency, version and configuration evidence |
+| Infrastructure advisory review | $399–$1,499 | Scoped appliance or application inventory |
 | Multi-asset assessment | Custom | Multiple authorized environments and consolidated reporting |
 
-Prices are initial market-test assumptions, not established market benchmarks.
+Prices are deliberately set below typical market rates to win first clients and lower the barrier to trying the service (see Section 11.1 for the research behind this). They are market-test assumptions, not established benchmarks. Because the checkers do the repeatable work, the assessments must stay narrow and well defined, or the low price will not cover the labor.
 
 Assessments must specify what the selected tools can and cannot determine. They do not replace full penetration testing, compromise investigations, or comprehensive vulnerability management.
 
@@ -372,8 +372,8 @@ Offer one-time remediation for customers who prefer not to subscribe.
 
 **Indicative pricing:**
 
-- Simple repair: $500–$1,500.
-- Moderate application remediation: $1,500–$5,000.
+- Simple repair: $250–$750.
+- Moderate application remediation: $750–$2,500.
 - Complex enterprise remediation: custom statement of work.
 
 The final fee depends on scope, operational risk, customer requirements, and required testing.
@@ -382,7 +382,7 @@ The final fee depends on scope, operational risk, customer requirements, and req
 
 | Service | Essential | Business | Premium |
 |---|---:|---:|---:|
-| Monthly subscription | $99 | $199 | $399 |
+| Monthly subscription | $49 | $99 | $199 |
 | Website hosting or administration | Included by scope | Included by scope | Included by scope |
 | Scheduled maintenance | Included | Included | Included |
 | Backup monitoring | Basic | Expanded | Expanded |
@@ -410,7 +410,7 @@ Services may include:
 - Monthly reporting.
 - Security consultation.
 
-**Indicative starting subscription:** $299–$1,299 per month, depending on assets, review frequency, and included labor.
+**Indicative starting subscription:** $149–$599 per month, depending on assets, review frequency, and included labor.
 
 This service does not guarantee that all vulnerabilities will be discovered or that infrastructure is continuously protected.
 
@@ -429,6 +429,8 @@ Expand established relationships by identifying operational bottlenecks.
 | Custom AI agents | Controlled, auditable business task execution |
 
 Revenue consists of separately scoped implementation fees plus ongoing hosting, monitoring, support, and maintenance subscriptions.
+
+**Indicative pricing:** implementation $750–$3,000 for a defined first workflow, and a $99–$249 monthly subscription for hosting, monitoring, and support. Larger builds are quoted separately.
 
 Solutions should be selected using estimated customer ROI, implementation complexity, and operational risk.
 
@@ -592,44 +594,61 @@ Successful automation projects generate further opportunities through scheduled 
 
 # 11. Financial Model
 
-## 11.1 First-Year Assumptions
+## 11.1 Market Research Inputs
 
-The base financial scenario retains the original plan's conservative illustration:
+Prices and conversion rates below come from public 2026 sources. Almost all of them are vendor blogs selling the service being priced, so treat them as directional signals, not independent benchmarks. They were collected on October 29, 2026 and should be re-checked before you rely on them.
 
-- 30 managed-service customers by year-end.
-- $179 blended managed-service monthly subscription.
-- 15 average active managed-service customers during Year 1.
-- 12 separately billed remediation projects at $750 each.
-- Six automation implementation projects at $1,500 each.
-- Six automation subscribers at year-end.
-- Three average active automation subscribers at $199 per month.
+| Topic | What the sources report | Source |
+|---|---|---|
+| Small-business website maintenance | Roughly $50–$500 per month overall. Tighter bands cluster at $75–$200 for a professional plan and $35–$100 for a very small site. Stores and booking sites cost more. | [GoDaddy figure cited by Ueni](https://ueni.com/blog/website-maintenance-cost/), [WebFX](https://www.webfx.com/web-development/pricing/website-maintenance), [Seahawk Media](https://seahawkmedia.com/?p=413926) |
+| Small-business security assessment | Automated vulnerability assessment about $1,000–$5,000 per engagement. Manual penetration tests about $5,000–$20,000. One state contract lists $200 per web-application scan. | [Qualysec](https://qualysec.com/vulnerability-assessment-cost/), [DeepStrike](https://deepstrike.io/blogs/vulnerability-assessment-pricing-2025), [Beancount](https://beancount.io/blog/2026/10/14/penetration-test-vs-vulnerability-scan-cost-frequency-compliance-guide) |
+| AI automation services | Small-business retainers about $500–$1,500 per month, with some lighter ones from $300. One-off builds about $1,500–$12,000. Productized audits $250–$1,000. Figures are self-reported and inconsistent. | [Codewave](https://codewave.com/feeds/blog/ai-automation-agency-pricing), [Vantaige](https://vantaige.io/blog/2026-ai-automation-rate-card-operators-charge), [Bushe](https://bushe.co/answers/how-much-does-ai-consulting-cost-for-a-small-business/) |
+| Cold email results | Average reply rate about 2–6% (one report: 3.43%). Meetings booked about 0.3–1.5% of prospects contacted. Roughly 15–30% of replies become a meeting. Local services often reply differently from software sales. | [Instantly](https://instantly.ai/blog/email-sequence-benchmarks-2026-whats-a-good-open-rate-reply-rate-and-cost-per-meeting/), [Apollo](https://www.apollo.io/insights/what-is-a-good-benchmark-for-reply-rates-in-cold-outreach), [LeadHaste](https://leadhaste.com/blog/cold-email-meeting-booked-rate-benchmarks-2026) |
+| Managed-service retention | No reliable published monthly churn figure for small-business clients was found. One MSP source suggests aiming for 90% or better annual retention. Small businesses often leave because they feel too small to be a priority. | [JumpCloud](https://jumpcloud.com/blog/understanding-client-churn-and-retention), [N-able](https://www.n-able.com/de/blog/understanding-real-impact-churn-your-business) |
+| Market size | A lender page reports more than 80,000 employer establishments in the Cincinnati metro (unverified). Census County Business Patterns, metro code 17140, gives an authoritative count by employee-size class. | [Census CBP](https://data.commerce.gov/annual-economic-surveys-business-patterns-county-business-patterns) |
 
-These are planning assumptions, not demand forecasts.
+**What this means for pricing.** The recommended prices in Section 6 sit well below the research ranges: website care from $49 against a typical $50–$500, assessments from $79 against $1,000 or more for a vendor scan, and automation subscriptions from $99 against $500 or more for a retainer. The aim is a low-friction first purchase. The tradeoff is thin margins, so every service must be productized and mostly automated, and the price must be reviewed once real hours per client are known.
 
-## 11.2 Year 1 Revenue
+## 11.2 Acquisition Assumption: 4–8 New Clients per Month
 
-| Revenue stream | Annual revenue |
-|---|---:|
-| Managed hosting and security subscriptions | $32,220 |
-| Standalone remediation projects | $9,000 |
-| Automation implementations | $9,000 |
-| Recurring automation subscriptions | $7,164 |
-| **Total** | **$57,384** |
+The planning hypothesis is that a focused operator can add 4 to 8 new paying clients per month once outreach is running. This is an assumption to test, not a finding. The research above implies the volume of work behind it:
 
-This base scenario excludes potential additional revenue from enterprise assessments, managed infrastructure security, MSP partnerships, and commercial software licensing.
+| Step | 4 clients per month | 8 clients per month |
+|---|---:|---:|
+| New paying clients | 4 | 8 |
+| Consultations needed at a 25% close rate | 16 | 32 |
+| Prospects contacted at a 1% meeting rate | about 1,600 | about 3,200 |
 
-These are upside opportunities that should only enter the financial model once validated.
+If your real meeting rate is 0.3%, the prospect volume roughly triples. If it is 1.5%, it falls by a third. Referrals, partners, and the free assessment lead magnet can reduce outbound volume, but none of them is proven yet. Outbound email at this volume must follow the compliance rules in Section 17.
 
-## 11.3 Recurring Revenue at Year-End
+## 11.3 Year 1 Scenarios
 
-| Metric | Amount |
-|---|---:|
-| Managed services MRR | $5,370 |
-| Automation services MRR | $1,194 |
-| **Combined MRR** | **$6,564** |
-| **Annualized recurring revenue run rate** | **$78,768** |
+**Model assumptions** (all illustrative):
 
-## 11.4 Financial Controls
+- New clients ramp over the first three months at 50%, 75%, then 100% of the monthly target.
+- Every new client starts on a managed subscription. The mix is 50% Essential at $49, 35% Business at $99, and 15% Premium at $199, a blended **$89 per month**.
+- Monthly churn is **2%** (about 21% of clients lost per year), a deliberately cautious guess because no benchmark was found.
+- 25% of new clients buy a one-time remediation project at an average $500.
+- 10% of new clients add an automation project at $1,000 and a $99 monthly subscription.
+
+| Metric | 4 per month | 6 per month | 8 per month |
+|---|---:|---:|---:|
+| New clients in Year 1 | 45 | 68 | 90 |
+| Active clients at year-end | 41 | 61 | 81 |
+| Managed subscription revenue | $23,027 | $34,541 | $46,054 |
+| Remediation and automation project revenue | $10,125 | $15,188 | $20,250 |
+| Automation subscription revenue | $2,561 | $3,842 | $5,123 |
+| **Total Year 1 revenue** | **$35,714** | **$53,570** | **$71,427** |
+| **Year-end monthly recurring revenue** | **$4,019** | **$6,029** | **$8,038** |
+| Annualized recurring run rate | $48,229 | $72,344 | $96,459 |
+
+These are revenue figures, not profit. They exclude hosting, software, AI usage, payment fees, insurance, taxes, and your own labor. The earlier version of this plan assumed fewer clients at higher prices (30 customers, $179 blended); the lower price and higher volume here make delivery efficiency matter much more.
+
+## 11.4 Capacity Check
+
+Low prices only work if delivery time per client is small. At an assumed 1.5 hours per client per month, 41 active clients need about 62 hours a month and 81 need about 122 hours, which is more than a part-time operator can handle. At the $89 blended price that is about $59 of revenue per delivery hour before any other costs. Measure real hours per client in the first pilots. If they exceed what the price supports, raise prices, narrow the scope, automate more, or cap the number of clients.
+
+## 11.5 Financial Controls
 
 Maintain separate financial reporting for:
 
@@ -639,9 +658,9 @@ Maintain separate financial reporting for:
 - Enterprise security contracts.
 - Software licensing.
 
-Measure gross margin after hosting, software, support labor, monitoring infrastructure, payment fees, and directly attributable service costs.
+Measure gross margin after hosting, software, AI usage, support labor, monitoring infrastructure, payment fees, and directly attributable service costs.
 
-Track acquisition costs, customer churn, utilization, contract renewal rates, and liabilities arising from service commitments.
+Track acquisition costs, churn, hours per client, utilization, contract renewal rates, and liabilities arising from service commitments.
 
 A customer paying less than their previous hosting bill is only a viable win if the Company can sustainably deliver the agreed services.
 
@@ -728,10 +747,10 @@ The existing WordPress free-scan integration may be piloted only after its docum
 
 Initial test targets, subject to adjustment:
 
-- 100–250 qualified business records.
-- 20–40 meaningful sales conversations.
-- 10–20 consented consultations or assessments.
-- Three to eight initial paying customers.
+- 500–1,000 qualified business records contacted (see Section 11.2 for steady-state volume).
+- 40–80 meaningful sales conversations.
+- 20–50 consented consultations or assessments.
+- 9–18 initial paying clients over the three months, if the 4–8 per month hypothesis holds. Fewer means the hypothesis needs revising.
 - At least one recurring managed-service conversion.
 - At least one business automation discovery engagement.
 
