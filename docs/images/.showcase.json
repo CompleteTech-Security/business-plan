@@ -1,0 +1,80 @@
+{
+ "config_sha256": "07d711d1ba57ee61e2d71a6b4ca6c4d6a62862781fe940a194bc3a08519a10eb",
+ "fingerprint": "6a80c3817100fb1a90f83fe9ea74a6c4216ff319fb76bb4139529faf018e933f",
+ "inputs": {
+  "description": "Create a company-neutral business plan for an AI-enabled security and technology services practice.",
+  "icon_sha256": null,
+  "language": "HTML",
+  "license": "NOASSERTION",
+  "override_sha256": "98bffe9753e16c353676490c52c9debe88f84ecc216e2126c043a5d94175ddd7",
+  "owner": "CompleteTech-Security",
+  "repo": "business-plan",
+  "topics": [
+   "ai",
+   "ai-agent",
+   "completetech",
+   "cve",
+   "html",
+   "security",
+   "template"
+  ],
+  "type": "security-check",
+  "visibility": "public"
+ },
+ "outputs": {
+  "banner.png": {
+   "bytes": 257286,
+   "chips": [
+    {
+     "box": [
+      520,
+      240.2,
+      170.1,
+      38
+     ],
+     "kind": "key",
+     "source": "override",
+     "text": "Open template"
+    },
+    {
+     "box": [
+      702.1,
+      240.2,
+      119.4,
+      38
+     ],
+     "kind": "attr",
+     "source": "override",
+     "text": "CC BY 4.0"
+    },
+    {
+     "box": [
+      833.5,
+      240.2,
+      135.2,
+      38
+     ],
+     "kind": "attr",
+     "source": "override",
+     "text": "20 sections"
+    }
+   ],
+   "icon_source": "org-mark",
+   "px": [
+    2560,
+    720
+   ],
+   "repository_id": 1438957589,
+   "scale": 2,
+   "sha256": "0be0672625a6f056f0b92f4c61045e3fa6a30d543aafc9d47296de1952d80178"
+  },
+  "card.svg": {
+   "bytes": 21607,
+   "repository_id": 1438957589,
+   "sha256": "7485caa73d90af92132df2844034c5f7aa4bb91cb0e4d708d3958810e17cb0c3"
+  }
+ },
+ "schema": 1,
+ "skill_version": "1.0.0",
+ "standard": "ct-std-v1"
+}
