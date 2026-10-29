@@ -24,6 +24,8 @@ The central proposition is straightforward:
 
 The company will emphasize measurable results rather than fear-based security sales.
 
+**Strategy: low entry prices, higher volume, automated delivery.** Entry offers are priced below typical market rates (website care from $49 a month, assessments from $79) so that trying the service is an easy decision. The plan tests a hypothesis that an operator can add 4 to 8 new paying clients per month. That only works if each client takes little time to serve, so reports, monitoring, onboarding, and billing are productized and automated, and a person reviews anything consequential. Section 11 gives the sourced market research, the funnel arithmetic, three revenue scenarios, and a capacity check. The numbers are assumptions to validate, not predictions.
+
 # 2. Existing Technology Assets
 
 ## 2.1 GitHub Portfolio Overview
@@ -184,7 +186,7 @@ The portfolio supports three commercial customer segments.
 - Website maintenance and monitoring.
 - Business automation.
 
-**Preferred commercial outcome:** A 12-month managed-service relationship with expansion into AI automation.
+**Preferred commercial outcome:** A low-cost monthly managed-service relationship, ideally on a 12-month term, with expansion into AI automation.
 
 ## Segment B: Technology-Dependent SMBs
 
@@ -294,6 +296,8 @@ Do not represent a business as vulnerable based only on an inferred software sta
 Outreach channels may include email, conventional business calls, referral introductions, professional networks, and local business events.
 
 Commercial communications must comply with applicable email, telemarketing, and privacy rules, including relevant state requirements and opt-out handling.
+
+**Volume.** Reaching 4 to 8 new clients per month implies contacting roughly 1,600 to 3,200 prospects per month at the assumed 1% meeting rate (Section 11.2). That needs a CRM, sequencing and deliverability tooling, suppression and opt-out lists, and sender domains kept separate from the main business domain. AI may draft messages, but a person approves each template, and messages must not claim a prospect is vulnerable without evidence. If compliance or deliverability limits volume, lower the client target instead of loosening the rules.
 
 # 5. Free Security Assessment as a Lead Magnet
 
@@ -675,7 +679,8 @@ A customer paying less than their previous hosting bill is only a viable win if 
 - Identify gaps in Scan Results Bridge compatibility.
 - Review repository naming and links for accuracy.
 - Define customer assessment authorization.
-- Establish service pricing, scope, and customer agreements.
+- Set entry-level prices from Section 6, a productized scope for each, and a time budget per client.
+- Establish customer agreements.
 - Configure CRM, reporting, and customer records.
 - Prepare sample reports using synthetic data.
 
@@ -689,15 +694,16 @@ A customer paying less than their previous hosting bill is only a viable win if 
 - Validate conversion from consultation to remediation.
 - Measure service costs and turnaround times.
 - Test managed-service onboarding.
-- Refine packages based on customer needs.
+- Record actual hours per client and compare them with the time budget.
+- Refine packages, scope, and price floors based on customer needs and measured hours.
 
 The existing WordPress free-scan integration may be piloted only after its documented safety and operational requirements are met.
 
-**Success gate:** Evidence that customers value the service and that it can be delivered profitably.
+**Success gate:** Evidence that customers value the service and that it can be delivered profitably at the entry-level prices, with hours per client inside the time budget.
 
 ## Phase 3: Days 61–90 — Commercial Launch
 
-- Establish a structured local prospecting process.
+- Establish a structured local prospecting process and ramp outreach toward the volume in Section 11.2.
 - Introduce documented outreach sequences.
 - Publish service descriptions and example reports.
 - Add customer referral mechanisms.
@@ -706,13 +712,14 @@ The existing WordPress free-scan integration may be piloted only after its docum
 - Begin targeted enterprise advisory reviews.
 - Offer initial AI automation discovery consultations.
 
-**Success gate:** Repeatable sales, onboarding, remediation, and retention procedures.
+**Success gate:** Repeatable sales, onboarding, remediation, and retention procedures, and a measured meeting rate and close rate to replace the Section 11 assumptions.
 
 ## Phase 4: Months 4–6 — Standardization
 
 - Expand customer inventory and reporting integrations.
 - Implement additional schema adapters.
-- Automate appropriate administrative tasks.
+- Automate onboarding, reporting, monitoring, and billing so hours per client fall, with human review of consequential steps.
+- Re-run the Section 11.3 scenarios with measured acquisition, churn, and hours.
 - Develop a common customer reporting experience.
 - Establish regular advisory-rule maintenance.
 - Improve service monitoring and incident workflows.
@@ -726,6 +733,7 @@ The existing WordPress free-scan integration may be piloted only after its docum
 - Pilot commercially licensed or white-label reporting.
 - Productize successful AI automation solutions.
 - Improve account expansion and customer retention.
+- Raise prices or add higher tiers where demand and measured hours allow, and set a client cap or waitlist when capacity is full.
 - Reinvest in repeatable technology delivery.
 
 # 13. Key Performance Indicators
@@ -733,11 +741,13 @@ The existing WordPress free-scan integration may be piloted only after its docum
 | Category | Primary KPI |
 |---|---|
 | Market discovery | Qualified businesses identified |
-| Prospecting | Response and meeting conversion rates |
+| Prospecting | Prospects contacted, response rate, and meeting rate per prospect (assumed 1%) |
+| Sales | Close rate (assumed 25%) and new paying clients per month (target 4–8) |
 | Security assessment | Completed authorized assessments |
 | Technical quality | False-positive rate, unknown-result rate, evidence completeness |
 | Remediation | Proposal win rate and resolution verification |
-| Managed services | MRR, gross margin, churn |
+| Managed services | MRR, gross margin, monthly churn (assumed 2%) |
+| Capacity and pricing | Hours per client per month, revenue per delivery hour, and price realization against list |
 | Customer expansion | Automation attach rate and additional revenue per account |
 | Customer experience | Retention and satisfaction |
 | Software portfolio | Tool coverage, tests, advisory freshness, integration compatibility |
@@ -767,6 +777,9 @@ These are experimental operating targets, not projected conversion outcomes.
 | Incompatible assessment outputs | Versioned schemas and tested normalization adapters |
 | Sensitive customer-data disclosure | Segregated storage, access controls and redaction |
 | Underpriced recurring services | Cost accounting and service-scope limits |
+| Low entry prices do not cover delivery cost | Measure hours per client, productize scope, automate delivery, set price floors and a client cap |
+| 4–8 new clients per month is not reached | Treat it as a hypothesis, track funnel rates monthly, and re-run the Section 11.3 scenarios with actual numbers |
+| Outreach volume damages deliverability or breaks marketing law | Separate sender domains, suppression lists, human-approved templates, and the compliance checks in Section 17 |
 | Security tools mistaken for complete protection | Explicit coverage statements and appropriate third-party tools |
 | Commercial licensing uncertainty | Intellectual-property and license review |
 | AI service failures | Testing, audit logs, bounded permissions and human approval for consequential actions |
