@@ -26,8 +26,8 @@ STATS = [
     ("51", "Example tool repositories"),
     ("5", "Revenue streams"),
     ("12", "Month roadmap"),
-    ("$57,384", "Illustrative Year 1 revenue"),
-    ("$6,564", "Illustrative year-end MRR"),
+    ("$53,570", "Illustrative Year 1 revenue (6 clients/mo)"),
+    ("$6,029", "Illustrative year-end MRR"),
 ]
 
 CSS = """
